@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Layers, Recycle, Zap, RefreshCcw, ArrowRight } from 'lucide-react';
+import logisticsDocs from '../assets/logistics_docs.png';
 
 const BentoGrid = () => {
   const navigate = useNavigate();
@@ -98,7 +99,7 @@ const BentoGrid = () => {
             className="relative overflow-hidden group border border-swiss-dark/5 min-h-[200px]"
           >
             <img 
-              src="/src/assets/logistics_docs.png" 
+              src={logisticsDocs} 
               alt="Logistics Documents" 
               className="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" 
             />
