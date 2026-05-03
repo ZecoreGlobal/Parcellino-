@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-swiss-dark bg-white font-sans antialiased selection:bg-swiss-red/20 selection:text-swiss-red;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 9999;
+    filter: contrast(150%) brightness(1000%);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-swiss-red text-white px-6 py-3 rounded-sm font-medium hover:bg-swiss-red/90 transition-all active:scale-[0.98];
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-swiss-dark border border-swiss-dark/10 px-6 py-3 rounded-sm font-medium hover:bg-swiss-grey transition-all active:scale-[0.98];
+  }
+
+  .text-glass {
+    @apply backdrop-blur-md bg-white/30 border border-white/20;
+  }
+}
+
+/* Custom scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D52B1E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A02016;
+}

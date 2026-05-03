@@ -1,0 +1,81 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Quote } from 'lucide-react';
+
+const testimonials = [
+  {
+    brand: "HYDRUX.",
+    brandSub: "essence",
+    text: "We have been working with Parcellino in IT/logistics for our brand Hydrux for some time now... The cooperation is efficient, reliable, and absolutely professional.",
+    author: "Josip Kulis",
+    role: "Founder"
+  },
+  {
+    brand: "dirts",
+    text: "Parcellino takes over our fulfillment and we at dirts benefit from the fast processing... Parcellino is the perfect partner.",
+    author: "Philipp Riederle",
+    role: "Founder"
+  },
+  {
+    brand: "AIR LOUNGE®",
+    brandSub: "FASHION. LIFESTYLE. TRAVEL.",
+    text: "By outsourcing our warehouse and fulfillment, we benefited on our core competencies while being sure this part is handled professionally.",
+    author: "Sandro Küttel",
+    role: "Founder"
+  }
+];
+
+const ClientTestimonials = () => {
+  return (
+    <section className="py-24 bg-swiss-light-grey/50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
+            Client Success
+          </span>
+          <h2 className="text-4xl font-bold text-swiss-dark">Trusted by Industry Leaders</h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonials.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-swiss-dark/5 flex flex-col items-center text-center group hover:shadow-xl hover:shadow-swiss-dark/5 transition-all duration-500"
+            >
+              <div className="mb-8 h-12 flex flex-col items-center justify-center">
+                <span className={`font-black tracking-tighter text-2xl ${item.brand === 'HYDRUX.' ? 'text-[#E5C9A7]' : 'text-swiss-dark'}`}>
+                  {item.brand}
+                </span>
+                {item.brandSub && (
+                  <span className="text-[8px] font-bold text-swiss-dark/30 uppercase tracking-widest -mt-1">
+                    {item.brandSub}
+                  </span>
+                )}
+              </div>
+
+              <div className="relative mb-8">
+                <Quote size={24} className="text-swiss-red/10 absolute -top-4 -left-6" />
+                <p className="text-swiss-dark/70 text-sm leading-relaxed italic relative z-10">
+                  "{item.text}"
+                </p>
+              </div>
+
+              <div className="mt-auto">
+                <h4 className="font-bold text-swiss-dark text-base">{item.author}</h4>
+                <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-widest mt-1">
+                  {item.role}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ClientTestimonials;
