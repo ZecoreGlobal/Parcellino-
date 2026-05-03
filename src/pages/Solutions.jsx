@@ -58,11 +58,11 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-white dark:bg-[#0A0A0A] transition-colors duration-300">
       {/* Hero Section */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-white border-b border-swiss-dark/5">
+      <section className="relative py-24 md:py-32 overflow-hidden bg-white dark:bg-[#0A0A0A] border-b border-swiss-dark/5 dark:border-white/5 transition-colors">
         <div 
-          className="absolute inset-0 z-0 opacity-10 bg-cover bg-center"
+          className="absolute inset-0 z-0 opacity-10 dark:opacity-5 bg-cover bg-center transition-opacity"
           style={{ backgroundImage: `url(${heroBg})` }}
         />
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -77,7 +77,7 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold text-swiss-dark leading-tight mb-6 max-w-3xl"
+            className="text-5xl md:text-7xl font-bold text-swiss-dark dark:text-white leading-tight mb-6 max-w-3xl transition-colors"
           >
             Tailored Logistics for<br />
             Global Ambition.
@@ -86,7 +86,7 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-swiss-dark/60 max-w-xl leading-relaxed"
+            className="text-xl text-swiss-dark/60 dark:text-white/60 max-w-xl leading-relaxed transition-colors"
           >
             Swiss-engineered precision for industries that demand perfection.
           </motion.p>
@@ -94,9 +94,9 @@ const Solutions = () => {
       </section>
 
       {/* Trade Leaders Section */}
-      <section className="py-12 bg-swiss-light-grey border-b border-swiss-dark/5 overflow-hidden">
+      <section className="py-12 bg-swiss-light-grey dark:bg-[#0F0F0F] border-b border-swiss-dark/5 dark:border-white/5 overflow-hidden transition-colors">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-widest mb-8 text-center md:text-left">
+          <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mb-8 text-center md:text-left transition-colors">
             Powering Global Trade Leaders
           </p>
           <div className="relative flex overflow-hidden">
@@ -107,7 +107,7 @@ const Solutions = () => {
                 repeat: Infinity, 
                 ease: "linear" 
               }}
-              className="flex whitespace-nowrap gap-20 items-center opacity-40 grayscale pr-20"
+              className="flex whitespace-nowrap gap-20 items-center opacity-40 dark:opacity-20 grayscale pr-20 dark:text-white"
             >
               {[...tradeLeaders, ...tradeLeaders, ...tradeLeaders].map((leader, i) => (
                 <span key={i} className="text-xl md:text-2xl font-black tracking-tighter">
@@ -120,7 +120,7 @@ const Solutions = () => {
       </section>
 
       {/* Solutions Grid */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white dark:bg-[#0A0A0A] transition-colors">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {solutions.map((item, i) => (
@@ -131,13 +131,13 @@ const Solutions = () => {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 onClick={() => setSelectedSolution(item)}
-                className="p-10 border border-swiss-dark/5 bg-swiss-light-grey/50 group hover:bg-white hover:shadow-2xl hover:shadow-swiss-dark/10 transition-all duration-500 rounded-sm cursor-pointer"
+                className="p-10 border border-swiss-dark/5 dark:border-white/5 bg-swiss-light-grey/50 dark:bg-white/5 group hover:bg-white dark:hover:bg-[#141414] hover:shadow-2xl hover:shadow-swiss-dark/10 dark:hover:shadow-none transition-all duration-500 rounded-sm cursor-pointer"
               >
-                <span className="text-4xl font-bold text-swiss-red/10 group-hover:text-swiss-red/20 transition-colors block mb-6">
+                <span className="text-4xl font-bold text-swiss-red/10 dark:text-swiss-red/20 group-hover:text-swiss-red/20 transition-colors block mb-6">
                   {item.id}
                 </span>
-                <h3 className="text-2xl font-bold text-swiss-dark mb-4">{item.title}</h3>
-                <p className="text-swiss-dark/60 text-sm leading-relaxed mb-8">
+                <h3 className="text-2xl font-bold text-swiss-dark dark:text-white mb-4 transition-colors">{item.title}</h3>
+                <p className="text-swiss-dark/60 dark:text-white/60 text-sm leading-relaxed mb-8 transition-colors">
                   {item.desc}
                 </p>
                 <button 
@@ -164,17 +164,17 @@ const Solutions = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedSolution(null)}
-              className="absolute inset-0 bg-swiss-dark/90" // Dark background
+              className="absolute inset-0 bg-swiss-dark/90 backdrop-blur-sm" // Dark background
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-2xl bg-white p-8 md:p-12 rounded-sm shadow-2xl overflow-hidden z-10"
+              className="relative w-full max-w-2xl bg-white dark:bg-[#141414] p-8 md:p-12 rounded-sm shadow-2xl overflow-hidden z-10 transition-colors"
             >
               <button 
                 onClick={() => setSelectedSolution(null)}
-                className="absolute top-6 right-6 text-swiss-dark/40 hover:text-swiss-red transition-colors"
+                className="absolute top-6 right-6 text-swiss-dark/40 dark:text-white/40 hover:text-swiss-red transition-colors"
               >
                 <X size={24} />
               </button>
@@ -182,37 +182,37 @@ const Solutions = () => {
               <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
                 Deep Architecture — {selectedSolution.id}
               </span>
-              <h2 className="text-4xl font-bold text-swiss-dark mb-8">{selectedSolution.title}</h2>
+              <h2 className="text-4xl font-bold text-swiss-dark dark:text-white mb-8 transition-colors">{selectedSolution.title}</h2>
               
               <div className="space-y-8">
                 <div>
-                  <h4 className="text-xs font-bold text-swiss-dark/40 uppercase tracking-widest mb-4">Expert Insight</h4>
-                  <p className="text-swiss-dark/70 italic leading-relaxed">
+                  <h4 className="text-xs font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mb-4">Expert Insight</h4>
+                  <p className="text-swiss-dark/70 dark:text-white/70 italic leading-relaxed transition-colors">
                     "{selectedSolution.details.insight}"
                   </p>
                 </div>
                 
                 <div>
-                  <h4 className="text-xs font-bold text-swiss-dark/40 uppercase tracking-widest mb-6">Core Capabilities</h4>
+                  <h4 className="text-xs font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mb-6">Core Capabilities</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {selectedSolution.details.features.map((feature, i) => (
                       <div key={i} className="flex items-center gap-3">
                         <CheckCircle2 size={16} className="text-swiss-red flex-shrink-0" />
-                        <span className="text-sm text-swiss-dark/80 font-medium">{feature}</span>
+                        <span className="text-sm text-swiss-dark/80 dark:text-white/80 font-medium transition-colors">{feature}</span>
                       </div>
                     ))}
                   </div>
                 </div>
               </div>
               
-              <div className="mt-12 pt-8 border-t border-swiss-dark/5 flex flex-col md:flex-row gap-6 items-center justify-between">
-                <p className="text-xs text-swiss-dark/40">Ready to discuss this architecture for your brand?</p>
+              <div className="mt-12 pt-8 border-t border-swiss-dark/5 dark:border-white/5 flex flex-col md:flex-row gap-6 items-center justify-between transition-colors">
+                <p className="text-xs text-swiss-dark/40 dark:text-white/40">Ready to discuss this architecture for your brand?</p>
                 <Magnetic>
                   <a 
                     href="https://calendly.com/parcellino-swiss" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="bg-swiss-red text-white px-8 py-3 text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-swiss-dark transition-colors inline-block"
+                    className="bg-swiss-red text-white px-8 py-3 text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-swiss-dark dark:hover:bg-white dark:hover:text-swiss-dark transition-colors inline-block"
                   >
                     Schedule Technical Brief
                   </a>
@@ -224,7 +224,7 @@ const Solutions = () => {
       </AnimatePresence>
 
       {/* The Parcellino Advantage */}
-      <section className="py-24 bg-swiss-dark text-white overflow-hidden relative">
+      <section className="py-24 bg-swiss-dark dark:bg-[#080808] text-white overflow-hidden relative transition-colors">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div>
@@ -278,12 +278,12 @@ const Solutions = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-swiss-light-grey">
+      <section className="py-24 bg-swiss-light-grey dark:bg-[#0F0F0F] transition-colors">
         <div className="max-w-3xl mx-auto px-6">
           <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block text-center">
             Common Inquiries
           </span>
-          <h2 className="text-4xl font-bold text-swiss-dark mb-16 text-center">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold text-swiss-dark dark:text-white mb-16 text-center transition-colors">Frequently Asked Questions</h2>
           
           <div className="space-y-4">
             {[
@@ -306,15 +306,15 @@ const Solutions = () => {
             ].map((faq, i) => (
               <motion.details
                 key={i}
-                className="group border border-swiss-dark/5 bg-white rounded-sm overflow-hidden"
+                className="group border border-swiss-dark/5 dark:border-white/5 bg-white dark:bg-[#141414] rounded-sm overflow-hidden transition-colors"
               >
                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
-                  <span className="font-bold text-swiss-dark">{faq.q}</span>
+                  <span className="font-bold text-swiss-dark dark:text-white transition-colors">{faq.q}</span>
                   <span className="text-swiss-red group-open:rotate-180 transition-transform">
                     <ChevronDown size={20} />
                   </span>
                 </summary>
-                <div className="px-6 pb-6 text-swiss-dark/60 text-sm leading-relaxed">
+                <div className="px-6 pb-6 text-swiss-dark/60 dark:text-white/60 text-sm leading-relaxed transition-colors">
                   {faq.a}
                 </div>
               </motion.details>

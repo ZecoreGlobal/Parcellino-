@@ -4,8 +4,12 @@
 
 @layer base {
   body {
-    @apply text-swiss-dark bg-white font-sans antialiased selection:bg-swiss-red/20 selection:text-swiss-red;
+    @apply text-swiss-dark bg-white font-sans antialiased selection:bg-swiss-red/20 selection:text-swiss-red transition-colors duration-300;
     position: relative;
+  }
+
+  html.dark body {
+    @apply bg-[#0A0A0A] text-[#F5F5F5];
   }
 
   body::before {
@@ -20,6 +24,11 @@
     pointer-events: none;
     z-index: 9999;
     filter: contrast(150%) brightness(1000%);
+  }
+
+  .dark body::before {
+    opacity: 0.02;
+    filter: contrast(200%) brightness(50%);
   }
 }
 

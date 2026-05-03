@@ -12,7 +12,7 @@ const MetricsSection = () => {
   const partners = ["HYDRUX", "DIRTS", "VELOCITI", "ORBITA", "KRONOS"];
 
   return (
-    <section className="py-24 border-b border-swiss-dark/5 bg-white">
+    <section className="py-24 border-b border-swiss-dark/5 dark:border-white/5 bg-white dark:bg-[#0A0A0A] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-24">
           {metrics.map((metric, i) => (
@@ -24,23 +24,23 @@ const MetricsSection = () => {
               transition={{ delay: i * 0.2 }}
               className="text-center"
             >
-              <h3 className={`text-5xl md:text-6xl font-bold mb-4 ${metric.color || 'text-swiss-dark'}`}>
+              <h3 className={`text-5xl md:text-6xl font-bold mb-4 transition-colors ${metric.color || 'text-swiss-dark dark:text-white'}`}>
                 {metric.isNumeric ? (
                   <Counter value={metric.value} decimals={1} suffix={metric.suffix} />
                 ) : (
                   metric.value
                 )}
               </h3>
-              <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-[0.2em]">
+              <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em]">
                 {metric.label}
               </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 opacity-30 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-500">
+        <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 opacity-30 dark:opacity-20 grayscale hover:opacity-100 dark:hover:opacity-100 hover:grayscale-0 transition-all duration-500">
           {partners.map((partner) => (
-            <span key={partner} className="text-2xl font-black tracking-tighter cursor-default">
+            <span key={partner} className="text-2xl font-black tracking-tighter cursor-default dark:text-white">
               {partner}
             </span>
           ))}

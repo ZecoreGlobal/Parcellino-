@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Magnetic from './Magnetic';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const location = useLocation();
@@ -31,18 +32,16 @@ const Navbar = () => {
     const ctaSection = document.getElementById('cta-section');
     if (ctaSection) {
       ctaSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // If not on home page, maybe just go to home or stay
     }
     setIsMobileMenuOpen(false);
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-colors duration-300 ${isMobileMenuOpen ? 'bg-white' : 'bg-white/80 backdrop-blur-md'} border-b border-swiss-dark/5`}>
+    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isMobileMenuOpen ? 'bg-white dark:bg-[#0A0A0A]' : 'bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-md'} border-b border-swiss-dark/5 dark:border-white/5`}>
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <SwissFlag />
-          <span className="font-bold text-xl tracking-tight group-hover:text-swiss-red transition-colors">Parcellino Swiss</span>
+          <span className="font-bold text-xl tracking-tight group-hover:text-swiss-red transition-colors dark:text-white">Parcellino Swiss</span>
         </Link>
         
         {/* Desktop Links */}
@@ -52,7 +51,7 @@ const Navbar = () => {
               key={link.name} 
               to={link.path} 
               className={`text-sm font-medium transition-colors ${
-                location.pathname === link.path ? 'text-swiss-red' : 'text-swiss-dark/70 hover:text-swiss-red'
+                location.pathname === link.path ? 'text-swiss-red' : 'text-swiss-dark/70 dark:text-white/70 hover:text-swiss-red dark:hover:text-swiss-red'
               }`}
             >
               {link.name}
@@ -63,7 +62,7 @@ const Navbar = () => {
           <div className="relative">
             <button 
               onClick={() => setIsLangOpen(!isLangOpen)}
-              className="flex items-center gap-1.5 text-sm font-medium text-swiss-dark/70 hover:text-swiss-red transition-colors"
+              className="flex items-center gap-1.5 text-sm font-medium text-swiss-dark/70 dark:text-white/70 hover:text-swiss-red dark:hover:text-swiss-red transition-colors"
             >
               <Globe size={14} />
               {currentLang}
@@ -76,7 +75,7 @@ const Navbar = () => {
                   initial={{ opacity: 0, y: 10, scale: 0.95 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                  className="absolute top-full right-0 mt-4 w-40 bg-white border border-swiss-dark/5 shadow-2xl rounded-lg p-2 overflow-hidden"
+                  className="absolute top-full right-0 mt-4 w-40 bg-white dark:bg-[#141414] border border-swiss-dark/5 dark:border-white/10 shadow-2xl rounded-lg p-2 overflow-hidden"
                 >
                   {languages.map((lang) => (
                     <button
@@ -88,7 +87,7 @@ const Navbar = () => {
                       className={`w-full text-left px-4 py-3 text-sm font-medium transition-all flex items-center gap-3 group ${
                         currentLang === lang 
                           ? 'text-swiss-red bg-swiss-red/5 rounded-md' 
-                          : 'text-swiss-dark/60 hover:text-swiss-dark hover:bg-swiss-light-grey rounded-md'
+                          : 'text-swiss-dark/60 dark:text-white/60 hover:text-swiss-dark dark:hover:text-white hover:bg-swiss-light-grey dark:hover:bg-white/5 rounded-md'
                       }`}
                     >
                       {currentLang === lang && (
@@ -105,6 +104,8 @@ const Navbar = () => {
 
         {/* Desktop CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
+          <ThemeToggle />
+          
           <div className="hidden sm:block">
             <Magnetic>
               <button 
@@ -118,7 +119,7 @@ const Navbar = () => {
           
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-swiss-dark hover:text-swiss-red transition-colors"
+            className="md:hidden p-2 text-swiss-dark dark:text-white hover:text-swiss-red transition-colors"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -133,17 +134,17 @@ const Navbar = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 bg-white z-[150] flex flex-col md:hidden overflow-hidden"
+            className="fixed inset-0 bg-white dark:bg-[#0A0A0A] z-[150] flex flex-col md:hidden overflow-hidden"
           >
             {/* Header Area */}
-            <div className="h-20 flex items-center justify-between px-6 border-b border-swiss-dark/5">
+            <div className="h-20 flex items-center justify-between px-6 border-b border-swiss-dark/5 dark:border-white/5">
               <div className="flex items-center gap-3">
                 <SwissFlag />
-                <span className="font-bold text-lg uppercase tracking-tighter">Parcellino</span>
+                <span className="font-bold text-lg uppercase tracking-tighter dark:text-white">Parcellino</span>
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="p-2 text-swiss-dark hover:text-swiss-red transition-colors"
+                className="p-2 text-swiss-dark dark:text-white hover:text-swiss-red transition-colors"
               >
                 <X size={28} />
               </button>
@@ -164,11 +165,11 @@ const Navbar = () => {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="group flex items-baseline gap-4"
                     >
-                      <span className="text-xs font-black text-swiss-red/20 group-hover:text-swiss-red transition-colors duration-500">
+                      <span className="text-xs font-black text-swiss-red/20 dark:text-swiss-red/40 group-hover:text-swiss-red transition-colors duration-500">
                         0{i + 1}
                       </span>
                       <span className={`text-3xl font-black tracking-tighter transition-all duration-500 ${
-                        location.pathname === link.path ? 'text-swiss-red' : 'text-swiss-dark group-hover:pl-4'
+                        location.pathname === link.path ? 'text-swiss-red' : 'text-swiss-dark dark:text-white group-hover:pl-4'
                       }`}>
                         {link.name}
                       </span>
@@ -183,7 +184,7 @@ const Navbar = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-[0.2em] mb-4">Select Language</p>
+                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-4">Select Language</p>
                   <div className="flex flex-wrap gap-3">
                     {languages.map((lang) => (
                       <button
@@ -195,7 +196,7 @@ const Navbar = () => {
                         className={`text-[10px] font-bold px-4 py-2 border transition-all uppercase tracking-widest ${
                           currentLang === lang 
                             ? 'border-swiss-red bg-swiss-red text-white' 
-                            : 'border-swiss-dark/10 text-swiss-dark/60 hover:border-swiss-red hover:text-swiss-red'
+                            : 'border-swiss-dark/10 dark:border-white/10 text-swiss-dark/60 dark:text-white/60 hover:border-swiss-red hover:text-swiss-red'
                         }`}
                       >
                         {lang}
@@ -208,14 +209,14 @@ const Navbar = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
-                  className="pt-8 border-t border-swiss-dark/5"
+                  className="pt-8 border-t border-swiss-dark/5 dark:border-white/5"
                 >
-                  <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-[0.2em] mb-6">Contact Architecture</p>
+                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-6">Contact Architecture</p>
                   <div className="space-y-4">
-                    <a href="mailto:Sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark hover:text-swiss-red transition-colors">
+                    <a href="mailto:Sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
                       Sr@parcellino-swiss.ch
                     </a>
-                    <a href="tel:+4368120806840" className="block text-xl font-bold text-swiss-dark hover:text-swiss-red transition-colors">
+                    <a href="tel:+4368120806840" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
                       +43 681 20806840
                     </a>
                   </div>
