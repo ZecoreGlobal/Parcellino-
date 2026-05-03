@@ -7,7 +7,7 @@ import CTASection from '../components/CTASection';
 
 const Solutions = () => {
   const [selectedSolution, setSelectedSolution] = useState(null);
-  const tradeLeaders = ["LOGISTICS", "GLOBAL", "SWISS", "PRIME", "CARGO"];
+  const tradeLeaders = ["HYDRUX", "DIRTS", "VELOCITI", "ORBITA", "KRONOS"];
   
   const solutions = [
     {
@@ -99,12 +99,22 @@ const Solutions = () => {
           <p className="text-[10px] font-bold text-swiss-dark/40 uppercase tracking-widest mb-8 text-center md:text-left">
             Powering Global Trade Leaders
           </p>
-          <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 opacity-40 grayscale">
-            {tradeLeaders.map((leader) => (
-              <span key={leader} className="text-xl md:text-2xl font-black tracking-tighter">
-                {leader}
-              </span>
-            ))}
+          <div className="relative flex overflow-hidden">
+            <motion.div 
+              animate={{ x: [0, -1035] }}
+              transition={{ 
+                duration: 20, 
+                repeat: Infinity, 
+                ease: "linear" 
+              }}
+              className="flex whitespace-nowrap gap-20 items-center opacity-40 grayscale pr-20"
+            >
+              {[...tradeLeaders, ...tradeLeaders, ...tradeLeaders].map((leader, i) => (
+                <span key={i} className="text-xl md:text-2xl font-black tracking-tighter">
+                  {leader}
+                </span>
+              ))}
+            </motion.div>
           </div>
         </div>
       </section>
