@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-12 bg-white dark:bg-[#0A0A0A] border-t border-swiss-dark/5 dark:border-white/5 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex items-center gap-8">
-          <span className="text-sm font-bold tracking-tighter uppercase dark:text-white transition-colors">Parcellino Swiss</span>
+          <span className="text-sm font-bold tracking-tighter uppercase text-swiss-red transition-colors">Parcellino</span>
           <nav className="hidden md:flex items-center gap-6">
             {['Home', 'Solutions', 'Privacy'].map((link) => (
               <Link 

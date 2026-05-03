@@ -41,7 +41,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <SwissFlag />
-          <span className="font-bold text-xl tracking-tight group-hover:text-swiss-red transition-colors dark:text-white">Parcellino Swiss</span>
+          <span className="font-bold text-xl tracking-tight text-swiss-red transition-colors">Parcellino</span>
         </Link>
         
         {/* Desktop Links */}
@@ -140,7 +140,7 @@ const Navbar = () => {
             <div className="h-20 flex items-center justify-between px-6 border-b border-swiss-dark/5 dark:border-white/5">
               <div className="flex items-center gap-3">
                 <SwissFlag />
-                <span className="font-bold text-lg uppercase tracking-tighter dark:text-white">Parcellino</span>
+                <span className="font-bold text-lg uppercase tracking-tighter text-swiss-red">Parcellino</span>
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
