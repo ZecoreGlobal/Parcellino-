@@ -4,7 +4,6 @@ import BordersSection from '../components/BordersSection';
 import BentoGrid from '../components/BentoGrid';
 import MetricsSection from '../components/MetricsSection';
 import Testimonial from '../components/Testimonial';
-import ClientTestimonials from '../components/ClientTestimonials';
 import CTASection from '../components/CTASection';
 
 const Home = () => {
@@ -14,7 +13,6 @@ const Home = () => {
       <BordersSection />
       <BentoGrid />
       <MetricsSection />
-      <ClientTestimonials />
       <Testimonial />
       <CTASection variant="dark" />
     </>

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Layers, Recycle, Zap, RefreshCcw, ArrowRight } from 'lucide-react';
-import logisticsDocs from '../assets/logistics_docs.png';
+import mountainImage from '../assets/mountain.png';
 
 const BentoGrid = () => {
   const navigate = useNavigate();
@@ -99,10 +99,14 @@ const BentoGrid = () => {
             className="relative overflow-hidden group border border-swiss-dark/5 dark:border-white/5 min-h-[200px]"
           >
             <img 
-              src={logisticsDocs} 
-              alt="Logistics Documents" 
-              className="w-full h-full object-cover grayscale opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700" 
+              src={mountainImage} 
+              alt="Matterhorn Mountain" 
+              className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" 
             />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-all duration-700" />
+            <div className="absolute bottom-4 right-4 z-10">
+              <span className="text-swiss-red bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm text-xs tracking-[0.2em] lowercase font-black shadow-lg">parcellino</span>
+            </div>
           </motion.div>
           
           {/* Decorative Placeholder for Grid balance if needed, or just let it flow */}
