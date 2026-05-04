@@ -21,7 +21,7 @@ const BentoGrid = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[minmax(300px,auto)]">
           {/* Large Item 1: E-Com Integration */}
           <motion.div
             whileHover={{ y: -5 }}
