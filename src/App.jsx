@@ -7,23 +7,26 @@ import Solutions from './pages/Solutions';
 import ScrollToTop from './components/ScrollToTop';
 
 import { ThemeProvider } from './context/ThemeContext';
+import { LanguageProvider } from './context/LanguageContext';
 
 function App() {
   return (
     <ThemeProvider>
-      <Router>
-        <ScrollToTop />
-        <div className="min-h-screen overflow-x-hidden flex flex-col bg-inherit transition-colors duration-300">
-          <Navbar />
-          <main className="flex-grow">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/solutions" element={<Solutions />} />
-            </Routes>
-          </main>
-          <Footer />
-        </div>
-      </Router>
+      <LanguageProvider>
+        <Router>
+          <ScrollToTop />
+          <div className="min-h-screen overflow-x-hidden flex flex-col bg-inherit transition-colors duration-300">
+            <Navbar />
+            <main className="flex-grow">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/solutions" element={<Solutions />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        </Router>
+      </LanguageProvider>
     </ThemeProvider>
   );
 }

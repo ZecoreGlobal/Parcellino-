@@ -3,19 +3,21 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Layers, Recycle, Zap, RefreshCcw, ArrowRight } from 'lucide-react';
 import mountainImage from '../assets/mountain.png';
+import { useLanguage } from '../context/LanguageContext';
 
 const BentoGrid = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   return (
     <section className="py-24 bg-swiss-light-grey dark:bg-transparent transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
           <span className="text-swiss-dark/40 dark:text-white/40 font-bold tracking-[0.2em] text-[10px] uppercase mb-2 block">
-            ENGINEERED EXCELLENCE
+            {t('ENGINEERED EXCELLENCE')}
           </span>
           <h2 className="text-4xl font-bold text-swiss-dark dark:text-white transition-colors">
-            BENTO BOX OF PRECISION.
+            {t('BENTO BOX OF PRECISION.')}
           </h2>
         </div>
 
@@ -28,12 +30,12 @@ const BentoGrid = () => {
           >
             <div>
               <Layers className="text-swiss-red mb-6" size={32} />
-              <h3 className="text-2xl font-bold mb-4 dark:text-white">E-Com Integration</h3>
+              <h3 className="text-2xl font-bold mb-4 dark:text-white">{t('E-Com Integration')}</h3>
               <p className="text-swiss-dark/60 dark:text-white/60 max-w-sm leading-relaxed mb-6">
-                One-click Shopify/Woo/Amazon sync. Our API is built for high-frequency trading standards, ensuring your stock levels are never out of sync.
+                {t('One-click Shopify/Woo/Amazon sync. Our API is built for high-frequency trading standards, ensuring your stock levels are never out of sync.')}
               </p>
               <button className="flex items-center gap-2 text-[10px] font-bold text-swiss-red uppercase tracking-widest group-hover:gap-4 transition-all">
-                Explore Tech <ArrowRight size={14} />
+                {t('Explore Tech')} <ArrowRight size={14} />
               </button>
             </div>
             <div className="flex gap-4 text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mt-4">
@@ -51,12 +53,12 @@ const BentoGrid = () => {
           >
             <div className="relative z-10 h-full flex flex-col">
               <Recycle className="text-swiss-red dark:text-white mb-6" size={32} />
-              <h3 className="text-2xl font-bold mb-4">Sustainable Packaging</h3>
+              <h3 className="text-2xl font-bold mb-4">{t('Sustainable Packaging')}</h3>
               <p className="text-white/60 dark:text-white/80 leading-relaxed mb-8">
-                The future of eco-conscious delivery. 100% biodegradable materials engineered for structural integrity and premium unboxing experiences.
+                {t('The future of eco-conscious delivery. 100% biodegradable materials engineered for structural integrity and premium unboxing experiences.')}
               </p>
               <button className="flex items-center gap-2 text-[10px] font-bold text-swiss-red dark:text-white uppercase tracking-widest group-hover:gap-4 transition-all mt-auto">
-                View Eco-Policy <ArrowRight size={14} />
+                {t('View Eco-Policy')} <ArrowRight size={14} />
               </button>
             </div>
           </motion.div>
@@ -69,9 +71,9 @@ const BentoGrid = () => {
           >
             <div>
               <Zap className="text-swiss-red mb-6" size={28} />
-              <h3 className="text-xl font-bold mb-3 dark:text-white">Rapid Fulfillment</h3>
+              <h3 className="text-xl font-bold mb-3 dark:text-white">{t('Rapid Fulfillment')}</h3>
               <p className="text-sm text-swiss-dark/60 dark:text-white/60 leading-relaxed">
-                Order-to-shipping in 60 minutes. Picking flows that mimic Swiss timepieces.
+                {t('Order-to-shipping in 60 minutes. Picking flows that mimic Swiss timepieces.')}
               </p>
             </div>
             <ArrowRight size={16} className="text-swiss-red opacity-0 group-hover:opacity-100 transition-all self-end" />
@@ -85,9 +87,9 @@ const BentoGrid = () => {
           >
             <div>
               <RefreshCcw className="text-swiss-red mb-6" size={28} />
-              <h3 className="text-xl font-bold mb-3 dark:text-white">Returns Management</h3>
+              <h3 className="text-xl font-bold mb-3 dark:text-white">{t('Returns Management')}</h3>
               <p className="text-sm text-swiss-dark/60 dark:text-white/60 leading-relaxed">
-                Automated verification and instant restocking for peak efficiency.
+                {t('Automated verification and instant restocking for peak efficiency.')}
               </p>
             </div>
             <ArrowRight size={16} className="text-swiss-red opacity-0 group-hover:opacity-100 transition-all self-end" />

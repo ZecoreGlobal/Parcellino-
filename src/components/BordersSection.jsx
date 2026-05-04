@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import worldMap from '../assets/world_map.png';
+import { useLanguage } from '../context/LanguageContext';
 
 const BordersSection = () => {
+  const { t } = useLanguage();
   const flags = [
     { src: "https://flagcdn.com/w40/de.png", alt: "Germany" },
     { src: "https://flagcdn.com/w40/fr.png", alt: "France" },
@@ -15,10 +17,10 @@ const BordersSection = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-swiss-dark dark:text-white leading-tight mb-8 uppercase transition-colors">
-            Borders are <br className="hidden md:block" />obsolete.
+            {t('Borders are ')}<br className="hidden md:block" />{t('obsolete.')}
           </h2>
           <p className="text-base md:text-lg text-swiss-dark/60 dark:text-white/60 mb-10 leading-relaxed max-w-md mx-auto lg:mx-0 transition-colors">
-            Our infrastructure transcends physical limits. By leveraging the neutrality and central positioning of Switzerland, we provide a unified portal to the entire European and Global market.
+            {t('Our infrastructure transcends physical limits. By leveraging the neutrality and central positioning of Switzerland, we provide a unified portal to the entire European and Global market.')}
           </p>
           
           <div className="flex flex-col md:flex-row items-center gap-6">
@@ -30,7 +32,7 @@ const BordersSection = () => {
               ))}
             </div>
             <span className="text-[10px] font-bold text-swiss-red uppercase tracking-[0.2em]">
-              NATIVE MULTI-LANGUAGE ARCHITECTURE
+              {t('NATIVE MULTI-LANGUAGE ARCHITECTURE')}
             </span>
           </div>
         </div>

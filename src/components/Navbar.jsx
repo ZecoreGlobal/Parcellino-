@@ -4,16 +4,17 @@ import { ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Magnetic from './Magnetic';
 import ThemeToggle from './ThemeToggle';
+import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
+  const { currentLang, setLanguage, t } = useLanguage();
   const location = useLocation();
   const [isLangOpen, setIsLangOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
-  const [currentLang, setCurrentLang] = React.useState('English');
   
   const navLinks = [
-    { name: 'Home', path: '/' },
-    { name: 'Solutions', path: '/solutions' }
+    { name: t('Home'), path: '/' },
+    { name: t('Solutions'), path: '/solutions' }
   ];
 
   const languages = ['English', 'Deutsch', 'Français', 'Italiano', 'Español'];
@@ -81,7 +82,7 @@ const Navbar = () => {
                     <button
                       key={lang}
                       onClick={() => {
-                        setCurrentLang(lang);
+                        setLanguage(lang);
                         setIsLangOpen(false);
                       }}
                       className={`w-full text-left px-4 py-3 text-sm font-medium transition-all flex items-center gap-3 group ${
@@ -112,7 +113,7 @@ const Navbar = () => {
                 onClick={scrollToCTA}
                 className="bg-swiss-red text-white px-5 py-2.5 text-sm font-semibold rounded-sm hover:bg-swiss-red/90 transition-all active:scale-[0.98]"
               >
-                Start Your E-com Now
+                {t('Start Your E-com Now')}
               </button>
             </Magnetic>
           </div>
@@ -184,13 +185,13 @@ const Navbar = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 0.5 }}
                 >
-                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-4">Select Language</p>
+                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-4">{t('Select Language')}</p>
                   <div className="flex flex-wrap gap-3">
                     {languages.map((lang) => (
                       <button
                         key={lang}
                         onClick={() => {
-                          setCurrentLang(lang);
+                          setLanguage(lang);
                           setIsMobileMenuOpen(false);
                         }}
                         className={`text-[10px] font-bold px-4 py-2 border transition-all uppercase tracking-widest ${
@@ -211,7 +212,7 @@ const Navbar = () => {
                   transition={{ delay: 0.6 }}
                   className="pt-8 border-t border-swiss-dark/5 dark:border-white/5"
                 >
-                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-6">Contact Architecture</p>
+                  <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-6">{t('Contact Architecture')}</p>
                   <div className="space-y-4">
                     <a href="mailto:Sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
                       Sr@parcellino-swiss.ch
@@ -226,7 +227,7 @@ const Navbar = () => {
                   onClick={scrollToCTA}
                   className="w-full bg-swiss-red text-white py-5 font-bold uppercase tracking-[0.3em] text-xs hover:bg-swiss-dark transition-all shadow-xl shadow-swiss-red/20"
                 >
-                  Start Your E-com Now
+                  {t('Start Your E-com Now')}
                 </button>
               </div>
             </div>

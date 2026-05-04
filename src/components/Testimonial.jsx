@@ -2,8 +2,10 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone } from 'lucide-react';
 import saminaImg from '../assets/samina.png';
+import { useLanguage } from '../context/LanguageContext';
 
 const Testimonial = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-24 md:py-32 bg-white dark:bg-[#0A0A0A] overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
@@ -22,7 +24,7 @@ const Testimonial = () => {
 
         <div className="text-center lg:text-left">
           <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-8 block">
-            SWISS LEADERSHIP
+            {t('SWISS LEADERSHIP')}
           </span>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
@@ -30,12 +32,12 @@ const Testimonial = () => {
             viewport={{ once: true }}
             className="text-3xl md:text-5xl font-medium text-swiss-dark dark:text-white leading-[1.2] mb-12 italic transition-colors"
           >
-            "Logistics is the <span className="text-swiss-red font-bold not-italic">heartbeat</span> of your brand. We make sure it never skips a beat."
+            "{t('Logistics is the')} <span className="text-swiss-red font-bold not-italic">{t('heartbeat')}</span> {t('of your brand. We make sure it never skips a beat.')}"
           </motion.h2>
           
           <div>
             <p className="text-xl font-bold text-swiss-dark dark:text-white transition-colors">Samina Rehman</p>
-            <p className="text-sm text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest font-medium mb-6">Founder & CEO</p>
+            <p className="text-sm text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest font-medium mb-6">{t('Founder & CEO')}</p>
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
               <a 

@@ -5,9 +5,11 @@ import heroBg from '../assets/hero_bg.png';
 import Counter from './Counter';
 import Magnetic from './Magnetic';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const scrollToBorders = () => {
     const bordersSection = document.getElementById('borders-section');
@@ -33,16 +35,15 @@ const Hero = () => {
           className="text-center lg:text-left"
         >
           <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] sm:text-xs uppercase mb-4 block">
-            THE SWISS LOGISTICS EDGE
+            {t('THE SWISS LOGISTICS EDGE')}
           </span>
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-swiss-dark dark:text-white leading-[1.1] mb-6 transition-colors">
-            PARCELLINO:<br />
-            <span className="text-swiss-red">PRECISION</span><br />
-            FULFILLMENT.
+            {t('PARCELLINO:')}<br />
+            <span className="text-swiss-red">{t('PRECISION')}</span><br />
+            {t('FULFILLMENT.')}
           </h1>
           <p className="text-base sm:text-lg text-swiss-dark/60 dark:text-white/60 max-w-lg mb-10 leading-relaxed mx-auto lg:mx-0 transition-colors">
-            From the heart of Switzerland to the hands of your global customers. 
-            1-second logistics, 5-language integration, and the Swiss standard of reliability.
+            {t('From the heart of Switzerland to the hands of your global customers. 1-second logistics, 5-language integration, and the Swiss standard of reliability.')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -51,7 +52,7 @@ const Hero = () => {
                 onClick={() => navigate('/solutions')}
                 className="bg-swiss-red text-white px-8 py-4 font-bold flex items-center gap-3 hover:bg-swiss-red/90 transition-all group w-full sm:w-auto justify-center shadow-lg shadow-swiss-red/20"
               >
-                See our solutions
+                {t('See our solutions')}
                 <motion.span
                   animate={{ x: [0, 5, 0] }}
                   transition={{ repeat: Infinity, duration: 1.5 }}
@@ -65,7 +66,7 @@ const Hero = () => {
                 onClick={scrollToBorders}
                 className="bg-swiss-grey dark:bg-white/5 text-swiss-dark dark:text-white px-8 py-4 font-bold hover:bg-swiss-dark/5 dark:hover:bg-white/10 transition-all w-full sm:w-auto justify-center"
               >
-                View Network
+                {t('View Network')}
               </button>
             </Magnetic>
           </div>
@@ -84,8 +85,8 @@ const Hero = () => {
                 <Activity size={20} />
               </div>
               <div className="text-right">
-                <span className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 block uppercase">System Status</span>
-                <span className="text-xs font-bold text-green-500 uppercase tracking-wider">OPTIMIZED</span>
+                <span className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 block uppercase">{t('System Status')}</span>
+                <span className="text-xs font-bold text-green-500 uppercase tracking-wider">{t('OPTIMIZED')}</span>
               </div>
             </div>
 
@@ -93,18 +94,18 @@ const Hero = () => {
               <h3 className="text-5xl font-bold text-swiss-dark dark:text-white tracking-tighter mb-1 transition-colors">
                 <Counter value="0.92" decimals={2} suffix="s" />
               </h3>
-              <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest">PROCESS VELOCITY</p>
+              <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest">{t('PROCESS VELOCITY')}</p>
             </div>
 
             <div className="grid grid-cols-2 gap-8 border-t border-swiss-dark/5 dark:border-white/5 pt-8 transition-colors">
               <div>
-                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">ACCURACY</span>
+                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">{t('ACCURACY')}</span>
                 <span className="text-xl font-bold text-swiss-dark dark:text-white transition-colors">
                   <Counter value="99.99" decimals={2} suffix="%" />
                 </span>
               </div>
               <div>
-                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">LATENCY</span>
+                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">{t('LATENCY')}</span>
                 <span className="text-xl font-bold text-swiss-dark dark:text-white transition-colors">
                   <Counter value="14" suffix="ms" />
                 </span>
@@ -125,7 +126,7 @@ const Hero = () => {
         transition={{ delay: 1.5, duration: 1 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3"
       >
-        <span className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em]">Scroll to explore</span>
+        <span className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em]">{t('Scroll to explore')}</span>
         <div className="w-[1px] h-12 bg-gradient-to-b from-swiss-red to-transparent relative overflow-hidden">
           <motion.div
             animate={{ y: [0, 48] }}

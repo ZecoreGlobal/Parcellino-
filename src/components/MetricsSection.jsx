@@ -1,12 +1,14 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Counter from './Counter';
+import { useLanguage } from '../context/LanguageContext';
 
 const MetricsSection = () => {
+  const { t } = useLanguage();
   const metrics = [
-    { value: "24/7", isNumeric: false, label: "MISSION-CRITICAL SUPPORT" },
-    { value: "99.9", suffix: "%", isNumeric: true, label: "ORDER ACCURACY RATE", color: "text-swiss-red" },
-    { value: "Global", isNumeric: false, label: "STRATEGIC REACH" }
+    { value: "24/7", isNumeric: false, label: t("MISSION-CRITICAL SUPPORT") },
+    { value: "99.9", suffix: "%", isNumeric: true, label: t("ORDER ACCURACY RATE"), color: "text-swiss-red" },
+    { value: "Global", isNumeric: false, label: t("STRATEGIC REACH") }
   ];
 
   const partners = ["HYDRUX", "DIRTS", "VELOCITI", "ORBITA", "KRONOS"];
