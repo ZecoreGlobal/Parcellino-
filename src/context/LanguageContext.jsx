@@ -167,7 +167,7 @@ const translations = {
 const LanguageContext = createContext();
 
 export const LanguageProvider = ({ children }) => {
-  const [currentLang, setCurrentLang] = useState('English');
+  const [currentLang, setCurrentLang] = useState('Deutsch');
 
   useEffect(() => {
     const savedLang = localStorage.getItem('parcellino-lang');
