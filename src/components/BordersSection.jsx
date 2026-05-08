@@ -6,9 +6,6 @@ import { useLanguage } from '../context/LanguageContext';
 const BordersSection = () => {
   const { t } = useLanguage();
   const flags = [
-    { src: "https://flagcdn.com/w40/de.png", alt: "Germany" },
-    { src: "https://flagcdn.com/w40/fr.png", alt: "France" },
-    { src: "https://flagcdn.com/w40/es.png", alt: "Spain" },
     { src: "https://flagcdn.com/w40/ch.png", alt: "Switzerland" }
   ];
 
@@ -17,10 +14,10 @@ const BordersSection = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-swiss-dark dark:text-white leading-tight mb-8 uppercase transition-colors">
-            {t('Borders are ')}<br className="hidden md:block" />{t('obsolete.')}
+            {t('Swiss coverage is')}<br className="hidden md:block" />{t('absolute.')}
           </h2>
           <p className="text-base md:text-lg text-swiss-dark/60 dark:text-white/60 mb-10 leading-relaxed max-w-md mx-auto lg:mx-0 transition-colors">
-            {t('Our infrastructure transcends physical limits. By leveraging the neutrality and central positioning of Switzerland, we provide a unified portal to the entire European and Global market.')}
+            {t("Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.")}
           </p>
           
           <div className="flex flex-col md:flex-row items-center gap-6">
@@ -32,7 +29,7 @@ const BordersSection = () => {
               ))}
             </div>
             <span className="text-[10px] font-bold text-swiss-red uppercase tracking-[0.2em]">
-              {t('NATIVE MULTI-LANGUAGE ARCHITECTURE')}
+              {t('SWISS MULTI-LANGUAGE ARCHITECTURE')}
             </span>
           </div>
         </div>
@@ -44,7 +41,7 @@ const BordersSection = () => {
           transition={{ duration: 1 }}
           className="relative rounded-sm overflow-hidden bg-swiss-grey dark:bg-white/5 shadow-2xl shadow-swiss-dark/10 dark:shadow-none transition-colors"
         >
-          <img src={worldMap} alt="World Map" className="w-full h-full object-cover grayscale opacity-80 dark:opacity-40 transition-opacity" />
+          <img src={worldMap} alt="Swiss Logistics Network" className="w-full h-full object-cover grayscale opacity-80 dark:opacity-40 transition-opacity" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <motion.div
               animate={{ scale: [1, 1.5, 1], opacity: [0.5, 1, 0.5] }}

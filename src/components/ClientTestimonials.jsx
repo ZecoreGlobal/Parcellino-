@@ -25,6 +25,16 @@ const testimonials = [
   }
 ];
 
+const highlightParcellino = (text) => {
+  if (!text) return text;
+  const parts = text.split(/(parcellino)/i);
+  return parts.map((part, index) => 
+    part.toLowerCase() === 'parcellino' 
+      ? <span key={index} className="text-swiss-red lowercase not-italic font-semibold">parcellino</span> 
+      : part
+  );
+};
+
 const ClientTestimonials = () => {
   return (
     <section className="py-24 bg-swiss-light-grey/50 dark:bg-[#0F0F0F] transition-colors duration-300">
@@ -60,7 +70,7 @@ const ClientTestimonials = () => {
               <div className="relative mb-8">
                 <Quote size={24} className="text-swiss-red/10 dark:text-swiss-red/5 absolute -top-4 -left-6" />
                 <p className="text-swiss-dark/70 dark:text-white/70 text-sm leading-relaxed italic relative z-10 transition-colors">
-                  "{item.text}"
+                  "{highlightParcellino(item.text)}"
                 </p>
               </div>
 

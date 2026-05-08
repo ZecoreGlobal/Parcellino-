@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Shield, Globe, Zap, Leaf, ChevronDown, X, CheckCircle2, Calendar } from 'lucide-react';
+import { ArrowRight, Shield, MapPin, Zap, Leaf, ChevronDown, X, CheckCircle2, Calendar } from 'lucide-react';
 import heroBg from '../assets/hero_bg.png';
 import Magnetic from '../components/Magnetic';
 import CTASection from '../components/CTASection';
 import { useLanguage } from '../context/LanguageContext';
 
 const Solutions = () => {
-  const { t } = useLanguage();
+  const { t, tRich } = useLanguage();
   const [selectedSolution, setSelectedSolution] = useState(null);
-  const tradeLeaders = ["HYDRUX", "DIRTS", "VELOCITI", "ORBITA", "KRONOS"];
   
   const solutions = [
     {
@@ -23,38 +22,11 @@ const Solutions = () => {
     },
     {
       id: "02",
-      title: t("Luxury Goods Handling"),
-      desc: t("White-glove treatment with enhanced security, premium unboxing experiences, and meticulous care for your most valuable inventory."),
-      details: {
-        insight: t("Luxury requires a different standard of care. We treat every parcel as a masterpiece, with dedicated white-glove inspection zones."),
-        features: [t("Enhanced Security Vaults"), t("Climate Controlled Storage"), t("Premium Tissue & Wax Seal handling"), t("Serial Number Tracking")]
-      }
-    },
-    {
-      id: "03",
-      title: t("Medical & High-Value"),
-      desc: t("Temperature-controlled environments and strict compliance protocols for sensitive inventories that demand zero-tolerance accuracy."),
-      details: {
-        insight: t("Precision is non-negotiable in medical logistics. Our facility meets the highest Swiss standards for pharmaceutical storage."),
-        features: [t("GDP Compliant Handling"), t("Cold Chain Logistics"), t("Batch & Expiry Management"), t("Sterile Environment Options")]
-      }
-    },
-    {
-      id: "04",
       title: t("Returns Management"),
       desc: t("Automated quality checks and rapid restocking to protect your bottom line. Turn returns into retained revenue and renewed trust."),
       details: {
         insight: t("Returns are the second point of customer contact. We process returns in under 24 hours to ensure rapid restocking or liquidation."),
         features: [t("Photo-Verified Inspections"), t("Quality Grading System"), t("Rapid Customer Refunds"), t("Regional Consolidation")]
-      }
-    },
-    {
-      id: "05",
-      title: t("Customs Clearance"),
-      desc: t("Frictionless cross-border shipping with fully managed Swiss and EU customs handling. We eliminate the complexity so you can focus on growth."),
-      details: {
-        insight: t("Cross-border trade shouldn't be a bottleneck. Our in-house customs experts ensure 100% compliance with EU and Swiss regulations."),
-        features: [t("IOSS & OSS Management"), t("HS Code Classification"), t("Duty & Tax Calculation"), t("Frictionless EU-Swiss corridor")]
       }
     }
   ];
@@ -82,7 +54,7 @@ const Solutions = () => {
             className="text-5xl md:text-7xl font-bold text-swiss-dark dark:text-white leading-tight mb-6 max-w-3xl transition-colors"
           >
             {t('Tailored Logistics for')}<br />
-            {t('Global Ambition.')}
+            {t('Swiss Ambition.')}
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -92,32 +64,6 @@ const Solutions = () => {
           >
             {t('Swiss-engineered precision for industries that demand perfection.')}
           </motion.p>
-        </div>
-      </section>
-
-      {/* Trade Leaders Section */}
-      <section className="py-12 bg-swiss-light-grey dark:bg-[#0F0F0F] border-b border-swiss-dark/5 dark:border-white/5 overflow-hidden transition-colors">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mb-8 text-center md:text-left transition-colors">
-            {t('Powering Global Trade Leaders')}
-          </p>
-          <div className="relative flex overflow-hidden">
-            <motion.div 
-              animate={{ x: [0, -1035] }}
-              transition={{ 
-                duration: 20, 
-                repeat: Infinity, 
-                ease: "linear" 
-              }}
-              className="flex whitespace-nowrap gap-20 items-center opacity-40 dark:opacity-20 grayscale pr-20 dark:text-white"
-            >
-              {[...tradeLeaders, ...tradeLeaders, ...tradeLeaders].map((leader, i) => (
-                <span key={i} className="text-xl md:text-2xl font-black tracking-tighter">
-                  {leader}
-                </span>
-              ))}
-            </motion.div>
-          </div>
         </div>
       </section>
 
@@ -225,7 +171,7 @@ const Solutions = () => {
         )}
       </AnimatePresence>
 
-      {/* The Parcellino Advantage */}
+      {/* The parcellino Advantage */}
       <section className="py-24 bg-swiss-dark dark:bg-[#080808] text-white overflow-hidden relative transition-colors">
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
@@ -233,7 +179,7 @@ const Solutions = () => {
               <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
                 {t('Solutions Architecture')}
               </span>
-              <h2 className="text-4xl md:text-5xl font-bold mb-12">{t('The Parcellino Advantage')}</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-12">{tRich('The Parcellino Advantage')}</h2>
               
               <div className="space-y-12">
                 <div className="flex gap-6">
@@ -248,11 +194,11 @@ const Solutions = () => {
                 
                 <div className="flex gap-6">
                   <div className="w-12 h-12 bg-swiss-red flex-shrink-0 flex items-center justify-center rounded-sm">
-                    <Globe size={24} />
+                    <MapPin size={24} />
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold mb-2">{t('Global Reach')}</h4>
-                    <p className="text-white/50 text-sm">{t('Direct lanes to Switzerland, EU, and beyond.')}</p>
+                    <h4 className="text-xl font-bold mb-2">{t('Swiss-wide Coverage')}</h4>
+                    <p className="text-white/50 text-sm">{t('Direct lanes to all 26 cantons.')}</p>
                   </div>
                 </div>
               </div>
@@ -294,12 +240,12 @@ const Solutions = () => {
                 a: t("Most major platforms (Shopify, WooCommerce, Amazon) can be integrated within 24-48 hours. Our technical team provides end-to-end support for custom API setups.")
               },
               {
-                q: t("Do you handle cross-border customs documentation?"),
-                a: t("Yes. We manage all Swiss and EU customs handling, ensuring your shipments move across borders without friction or unexpected delays.")
+                q: t("Do you deliver to alpine and remote Swiss regions?"),
+                a: t("Yes. We deliver to every single valley and mountain village across all 26 cantons with our specialized Swiss logistics partners, guaranteeing on-time arrival.")
               },
               {
-                q: t("Can you manage luxury goods with high security requirements?"),
-                a: t("Absolutely. We have dedicated secure zones for high-value inventory and provide white-glove unboxing experiences tailored for luxury brands.")
+                q: t("Are your packaging materials eco-friendly?"),
+                a: t("Yes. We use 100% biodegradable, climate-neutral materials engineered specifically for safe, premium, and sustainable unboxing experiences across Switzerland.")
               },
               {
                 q: t("How does your returns management process work?"),

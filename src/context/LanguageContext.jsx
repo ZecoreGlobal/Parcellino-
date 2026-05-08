@@ -14,21 +14,20 @@ const translations = {
     "PARCELLINO:": "PARCELLINO:",
     "PRECISION": "PRÄZISION",
     "FULFILLMENT.": "FULFILLMENT.",
-    "From the heart of Switzerland to the hands of your global customers. 1-second logistics, 5-language integration, and the Swiss standard of reliability.": "Vom Herzen der Schweiz in die Hände Ihrer globalen Kunden. 1-Sekunden-Logistik, 5-Sprachen-Integration und der Schweizer Standard für Zuverlässigkeit.",
+    "From the heart of Switzerland to every corner of the nation. 1-second logistics, multi-language integration, and the Swiss standard of reliability.": "Vom Herzen der Schweiz in jeden Winkel des Landes. 1-Sekunden-Logistik, mehrsprachige Integration und der Schweizer Standard für Zuverlässigkeit.",
     "See our solutions": "Unsere Lösungen ansehen",
     "View Network": "Netzwerk anzeigen",
     "System Status": "Systemstatus",
-    "OPTIMIZED": "OPTIMIERT",
-    "PROCESS VELOCITY": "PROZESSGESCHWINDIGKEIT",
-    "ACCURACY": "GENAUIGKEIT",
-    "LATENCY": "LATENZ",
+    "26 Cantons": "26 Kantone",
+    "100% NATIONWIDE COVERAGE": "100% SCHWEIZWEITE ABDECKUNG",
+    "Seamless local fulfillment from Zurich to Geneva.": "Nahtloses lokales Fulfillment von Zürich bis Genf.",
     "Scroll to explore": "Zum Erkunden scrollen",
 
     // BordersSection
-    "Borders are ": "Grenzen sind ",
-    "obsolete.": "obsolet.",
-    "Our infrastructure transcends physical limits. By leveraging the neutrality and central positioning of Switzerland, we provide a unified portal to the entire European and Global market.": "Unsere Infrastruktur überschreitet physische Grenzen. Durch die Nutzung der Neutralität und der zentralen Lage der Schweiz bieten wir ein einheitliches Portal für den gesamten europäischen und globalen Markt.",
-    "NATIVE MULTI-LANGUAGE ARCHITECTURE": "NATIVE MEHRSPRACHIGE ARCHITEKTUR",
+    "Swiss coverage is": "Schweizer Abdeckung ist",
+    "absolute.": "absolut.",
+    "Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.": "Unsere Infrastruktur ist exklusiv für die Schweizer Landschaft optimiert. Von Genf bis Zürich, von Lugano bis Basel bieten wir ein makelloses Fulfillment, das perfekt auf die einzigartigen mehrsprachigen Kantone der Schweiz zugeschnitten ist.",
+    "SWISS MULTI-LANGUAGE ARCHITECTURE": "SCHWEIZER MEHRSPRACHIGE ARCHITEKTUR",
 
     // BentoGrid
     "ENGINEERED EXCELLENCE": "KONSTRUIERTE EXZELLENZ",
@@ -52,9 +51,9 @@ const translations = {
     // Solutions Page
     "Solutions Architecture": "Lösungsarchitektur",
     "Tailored Logistics for": "Maßgeschneiderte Logistik für",
-    "Global Ambition.": "Globale Ambitionen.",
+    "Swiss Ambition.": "Schweizer Ambitionen.",
     "Swiss-engineered precision for industries that demand perfection.": "Schweizer Präzision für Branchen, die Perfektion fordern.",
-    "Powering Global Trade Leaders": "Antrieb für globale Handelsführer",
+    "Powering Swiss Trade Leaders": "Antrieb für Schweizer Handelsführer",
     "E-Commerce Fulfillment": "E-Commerce Fulfillment",
     "Seamlessly scale your D2C brand with high-volume, precision-driven order processing. From pick & pack to last-mile — we architect speed.": "Skalieren Sie Ihre D2C-Marke nahtlos mit hochvolumiger, präzisionsgesteuerter Bestellabwicklung. Von Pick & Pack bis zur letzten Meile - wir entwerfen Geschwindigkeit.",
     "Explore this solution": "Diese Lösung erkunden",
@@ -63,8 +62,8 @@ const translations = {
     "Medical & High-Value": "Medizin & Hoher Wert",
     "Temperature-controlled environments and strict compliance protocols for sensitive inventories that demand zero-tolerance accuracy.": "Temperaturkontrollierte Umgebungen und strenge Compliance-Protokolle für sensible Bestände, die eine Null-Toleranz-Genauigkeit erfordern.",
     "Returns Management (Desc)": "Automatisierte Qualitätsprüfungen und schnelle Wiedereinlagerung zum Schutz Ihres Gewinns. Verwandeln Sie Retouren in einbehaltene Einnahmen und erneuertes Vertrauen.",
-    "Customs Clearance": "Zollabfertigung",
-    "Frictionless cross-border shipping with fully managed Swiss and EU customs handling. We eliminate the complexity so you can focus on growth.": "Reibungsloser grenzüberschreitender Versand mit vollständig verwalteter Schweizer und EU-Zollabwicklung. Wir beseitigen die Komplexität, damit Sie sich auf Wachstum konzentrieren können.",
+    "Swiss Cantonal Logistics": "Schweizer Kantonslogistik",
+    "Flawless delivery across all 26 cantons with optimized route networks and localized language handling. We cover Switzerland perfectly so you can focus on local growth.": "Reibungslose Lieferung in alle 26 Kantone mit optimierten Routennetzwerken und lokalisierter Sprachregelung. Wir decken die Schweiz perfekt ab, damit Sie sich auf lokales Wachstum konzentrieren können.",
     "Deep Architecture — ": "Tiefe Architektur — ",
     "Expert Insight": "Experteneinblick",
     "Core Capabilities": "Kernkompetenzen",
@@ -73,8 +72,8 @@ const translations = {
     "The Parcellino Advantage": "Der Parcellino-Vorteil",
     "Swiss Precision": "Schweizer Präzision",
     "99.9% fulfillment accuracy across all sectors.": "99,9% Fulfillment-Genauigkeit über alle Sektoren hinweg.",
-    "Global Reach": "Globale Reichweite",
-    "Direct lanes to Switzerland, EU, and beyond.": "Direkte Routen in die Schweiz, die EU und darüber hinaus.",
+    "Swiss-wide Coverage": "Schweizweite Abdeckung",
+    "Direct lanes to all 26 cantons.": "Direkte Linien in alle 26 Kantone.",
     "Eco-Friendly / Swiss Made": "Umweltfreundlich / Swiss Made",
     "\"Sustainable Packaging & Carbon-Balanced Logistics\"": "\"Nachhaltige Verpackung & klimaneutrale Logistik\"",
     "We engineer customized, eco-friendly unboxing experiences that align with your brand values while mitigating environmental impact through optimized shipping routes and climate-neutral partners.": "Wir entwickeln maßgeschneiderte, umweltfreundliche Unboxing-Erlebnisse, die mit Ihren Markenwerten übereinstimmen und gleichzeitig die Umweltauswirkungen durch optimierte Versandrouten und klimaneutrale Partner mindern.",
@@ -83,10 +82,10 @@ const translations = {
     "Frequently Asked Questions": "Häufig gestellte Fragen",
     "What is your typical turnaround for e-commerce integration?": "Wie ist Ihre typische Bearbeitungszeit für E-Commerce-Integrationen?",
     "Most major platforms (Shopify, WooCommerce, Amazon) can be integrated within 24-48 hours. Our technical team provides end-to-end support for custom API setups.": "Die meisten großen Plattformen (Shopify, WooCommerce, Amazon) können innerhalb von 24-48 Stunden integriert werden. Unser technisches Team bietet End-to-End-Support für benutzerdefinierte API-Setups.",
-    "Do you handle cross-border customs documentation?": "Kümmern Sie sich um grenzüberschreitende Zolldokumentationen?",
-    "Yes. We manage all Swiss and EU customs handling, ensuring your shipments move across borders without friction or unexpected delays.": "Ja. Wir übernehmen die gesamte Zollabwicklung für die Schweiz und die EU und stellen sicher, dass Ihre Sendungen ohne Reibung oder unerwartete Verzögerungen über die Grenzen gelangen.",
-    "Can you manage luxury goods with high security requirements?": "Können Sie Luxusgüter mit hohen Sicherheitsanforderungen verwalten?",
-    "Absolutely. We have dedicated secure zones for high-value inventory and provide white-glove unboxing experiences tailored for luxury brands.": "Absolut. Wir haben spezielle Sicherheitszonen für wertvolles Inventar und bieten White-Glove-Unboxing-Erlebnisse, die auf Luxusmarken zugeschnitten sind.",
+    "Do you deliver to alpine and remote Swiss regions?": "Liefern Sie auch in alpine und abgelegene Schweizer Regionen?",
+    "Yes. We deliver to every single valley and mountain village across all 26 cantons with our specialized Swiss logistics partners, guaranteeing on-time arrival.": "Ja. Wir liefern in jedes einzelne Tal und Bergdorf in allen 26 Kantonen mit unseren spezialisierten Schweizer Logistikpartnern und garantieren eine pünktliche Ankunft.",
+    "Are your packaging materials eco-friendly?": "Sind Ihre Verpackungsmaterialien umweltfreundlich?",
+    "Yes. We use 100% biodegradable, climate-neutral materials engineered specifically for safe, premium, and sustainable unboxing experiences across Switzerland.": "Ja. Wir verwenden zu 100% biologisch abbaubare, klimaneutrale Materialien, die speziell für sichere, erstklassige und nachhaltige Unboxing-Erlebnisse in der gesamten Schweiz entwickelt wurden.",
     "How does your returns management process work?": "Wie funktioniert Ihr Retourenmanagement-Prozess?",
     "Our automated returns portal allows customers to initiate returns easily. Once received, we perform rapid quality checks and restock or process according to your brand's specific protocols.": "Unser automatisiertes Retourenportal ermöglicht es Kunden, Retouren einfach zu veranlassen. Sobald sie eingegangen sind, führen wir schnelle Qualitätsprüfungen durch und lagern sie gemäß den spezifischen Protokollen Ihrer Marke ein oder verarbeiten sie weiter.",
 
@@ -105,18 +104,18 @@ const translations = {
     
     // CTA Section
     "Ready to Scale Your Logistics?": "Bereit, Ihre Logistik zu skalieren?",
-    "Connect with our solutions architects for a tailored technical brief and global scaling strategy.": "Kontaktieren Sie unsere Lösungsarchitekten für ein maßgeschneidertes technisches Briefing und eine globale Skalierungsstrategie.",
+    "Connect with our solutions architects for a tailored technical brief and Swiss scaling strategy.": "Kontaktieren Sie unsere Lösungsarchitekten für ein maßgeschneidertes technisches Briefing und eine Schweizer Skalierungsstrategie.",
     "Book a Strategy Call": "Strategiegespräch buchen",
     "Speak to an Expert Now": "Jetzt mit einem Experten sprechen",
     "SCALABILITY": "SKALIERBARKEIT",
     "READY TO UPGRADE": "BEREIT FÜR EIN UPGRADE",
     "YOUR ARCHITECTURE?": "IHRER ARCHITEKTUR?",
-    "Join leading D2C brands leveraging Swiss precision for global growth.": "Schließen Sie sich führenden D2C-Marken an, die Schweizer Präzision für globales Wachstum nutzen.",
+    "Join leading D2C brands leveraging Swiss precision for nationwide growth.": "Schließen Sie sich führenden D2C-Marken an, die Schweizer Präzision für nationales Wachstum nutzen.",
     "Initiate Integration": "Integration starten",
     "Or contact our engineering team": "Oder kontaktieren Sie unser Technik-Team",
 
     // Footer
-    "Switzerland's premier fulfillment architecture. Precision, speed, and neutrality for global commerce.": "Die führende Fulfillment-Architektur der Schweiz. Präzision, Geschwindigkeit und Neutralität für den globalen Handel.",
+    "Switzerland's premier fulfillment architecture. Precision, speed, and neutrality for local commerce.": "Die führende Fulfillment-Architektur der Schweiz. Präzision, Geschwindigkeit und Neutralität für den lokalen Handel.",
     "Zürich, Switzerland": "Zürich, Schweiz",
     "Operations": "Betrieb",
     "E-Com Sync": "E-Com Sync",
@@ -186,8 +185,20 @@ export const LanguageProvider = ({ children }) => {
     return translations[currentLang]?.[text] || text;
   };
 
+  const tRich = (text) => {
+    const translated = t(text);
+    if (typeof translated !== 'string') return translated;
+    const parts = translated.split(/(parcellino)/i);
+    if (parts.length === 1) return translated;
+    return parts.map((part, index) => 
+      part.toLowerCase() === 'parcellino' 
+        ? <span key={index} className="text-swiss-red lowercase">parcellino</span> 
+        : part
+    );
+  };
+
   return (
-    <LanguageContext.Provider value={{ currentLang, setLanguage, t }}>
+    <LanguageContext.Provider value={{ currentLang, setLanguage, t, tRich }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -17,7 +17,7 @@ const Testimonial = () => {
           className="relative group max-w-md mx-auto lg:max-w-none"
         >
           <div className="absolute -top-4 -left-4 w-full h-full border border-swiss-red/20 z-0 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform" />
-          <div className="relative z-10 aspect-[4/5] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700">
+          <div className="relative z-10 aspect-[4/5] overflow-hidden">
             <img src={saminaImg} alt="Samina Rehman" className="w-full h-full object-cover" />
           </div>
         </motion.div>
@@ -41,11 +41,11 @@ const Testimonial = () => {
             
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
               <a 
-                href="mailto:Sr@parcellino-swiss.ch" 
+                href="mailto:sr@parcellino-swiss.ch" 
                 className="flex items-center gap-3 px-6 py-3 bg-white dark:bg-white/5 border border-swiss-dark/5 dark:border-white/10 text-swiss-dark dark:text-white hover:border-swiss-red dark:hover:border-swiss-red hover:text-swiss-red dark:hover:text-swiss-red transition-all group rounded-sm"
               >
                 <Mail size={16} className="group-hover:scale-110 transition-transform" />
-                <span className="text-xs font-bold uppercase tracking-widest">Sr@parcellino-swiss.ch</span>
+                <span className="text-xs font-bold tracking-widest lowercase">sr@<span className="text-swiss-red">parcellino</span>-swiss.ch</span>
               </a>
               <a 
                 href="tel:+4368120806840" 

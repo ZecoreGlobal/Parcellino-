@@ -42,7 +42,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-3 group">
           <SwissFlag />
-          <span className="font-bold text-xl tracking-tight text-swiss-red transition-colors">Parcellino</span>
+          <span className="font-bold text-xl tracking-tight text-swiss-red transition-colors lowercase">parcellino</span>
         </Link>
         
         {/* Desktop Links */}
@@ -141,7 +141,7 @@ const Navbar = () => {
             <div className="h-20 flex items-center justify-between px-6 border-b border-swiss-dark/5 dark:border-white/5">
               <div className="flex items-center gap-3">
                 <SwissFlag />
-                <span className="font-bold text-lg uppercase tracking-tighter text-swiss-red">Parcellino</span>
+                <span className="font-bold text-lg lowercase tracking-tighter text-swiss-red">parcellino</span>
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -214,8 +214,8 @@ const Navbar = () => {
                 >
                   <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-6">{t('Contact Architecture')}</p>
                   <div className="space-y-4">
-                    <a href="mailto:Sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
-                      Sr@parcellino-swiss.ch
+                    <a href="mailto:sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
+                      sr@<span className="text-swiss-red">parcellino</span>-swiss.ch
                     </a>
                     <a href="tel:+4368120806840" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
                       +43 681 20806840

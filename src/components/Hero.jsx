@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Activity, ShieldCheck, Zap } from 'lucide-react';
+import { MapPin, ShieldCheck, Zap } from 'lucide-react';
 import heroBg from '../assets/hero_bg.png';
+import mountain from '../assets/mountain.png';
 import Counter from './Counter';
 import Magnetic from './Magnetic';
 import { useNavigate } from 'react-router-dom';
@@ -9,7 +10,7 @@ import { useLanguage } from '../context/LanguageContext';
 
 const Hero = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, tRich } = useLanguage();
 
   const scrollToBorders = () => {
     const bordersSection = document.getElementById('borders-section');
@@ -37,13 +38,13 @@ const Hero = () => {
           <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] sm:text-xs uppercase mb-4 block">
             {t('THE SWISS LOGISTICS EDGE')}
           </span>
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-swiss-dark dark:text-white leading-[1.1] mb-6 transition-colors">
-            {t('PARCELLINO:')}<br />
-            <span className="text-swiss-red">{t('PRECISION')}</span><br />
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-swiss-dark dark:text-white leading-[1.1] mb-6 transition-colors uppercase">
+            <span className="text-swiss-red">PARCELLINO:</span><br />
+            {t('PRECISION')}<br />
             {t('FULFILLMENT.')}
           </h1>
           <p className="text-base sm:text-lg text-swiss-dark/60 dark:text-white/60 max-w-lg mb-10 leading-relaxed mx-auto lg:mx-0 transition-colors">
-            {t('From the heart of Switzerland to the hands of your global customers. 1-second logistics, 5-language integration, and the Swiss standard of reliability.')}
+            {t('From the heart of Switzerland to every corner of the nation. 1-second logistics, multi-language integration, and the Swiss standard of reliability.')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
@@ -78,38 +79,18 @@ const Hero = () => {
           transition={{ duration: 1, delay: 0.2 }}
           className="relative hidden lg:block"
         >
-          {/* Floating Performance Card */}
-          <div className="bg-white dark:bg-[#141414] p-8 shadow-[0_32px_64px_-12px_rgba(0,0,0,0.14)] dark:shadow-[0_32px_64px_-12px_rgba(0,0,0,0.5)] border border-swiss-dark/5 dark:border-white/5 relative z-10 transition-all">
-            <div className="flex items-center justify-between mb-10">
-              <div className="w-10 h-10 bg-swiss-red flex items-center justify-center rounded-sm text-white">
-                <Activity size={20} />
-              </div>
-              <div className="text-right">
-                <span className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 block uppercase">{t('System Status')}</span>
-                <span className="text-xs font-bold text-green-500 uppercase tracking-wider">{t('OPTIMIZED')}</span>
-              </div>
-            </div>
-
-            <div className="mb-8">
-              <h3 className="text-5xl font-bold text-swiss-dark dark:text-white tracking-tighter mb-1 transition-colors">
-                <Counter value="0.92" decimals={2} suffix="s" />
-              </h3>
-              <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest">{t('PROCESS VELOCITY')}</p>
-            </div>
-
-            <div className="grid grid-cols-2 gap-8 border-t border-swiss-dark/5 dark:border-white/5 pt-8 transition-colors">
-              <div>
-                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">{t('ACCURACY')}</span>
-                <span className="text-xl font-bold text-swiss-dark dark:text-white transition-colors">
-                  <Counter value="99.99" decimals={2} suffix="%" />
-                </span>
-              </div>
-              <div>
-                <span className="text-[9px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest block mb-1">{t('LATENCY')}</span>
-                <span className="text-xl font-bold text-swiss-dark dark:text-white transition-colors">
-                  <Counter value="14" suffix="ms" />
-                </span>
-              </div>
+          {/* Majestic Swiss Mountain Frame */}
+          <div className="relative rounded-sm overflow-hidden border border-swiss-dark/10 dark:border-white/10 shadow-2xl bg-white dark:bg-[#141414] p-3 transition-colors duration-300 max-w-lg ml-auto">
+            <img 
+              src={mountain} 
+              alt="Swiss Alps" 
+              className="w-full h-[380px] object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-1000 duration-700" 
+            />
+            <div className="absolute bottom-6 left-6 bg-swiss-dark/90 dark:bg-black/90 backdrop-blur-md px-4 py-2 border border-white/10 flex items-center gap-2 rounded-sm shadow-lg">
+              <span className="w-1.5 h-1.5 rounded-full bg-swiss-red animate-pulse" />
+              <span className="text-[9px] font-bold text-white uppercase tracking-widest">
+                SWISS PRECISION
+              </span>
             </div>
           </div>
           

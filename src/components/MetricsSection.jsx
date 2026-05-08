@@ -8,10 +8,9 @@ const MetricsSection = () => {
   const metrics = [
     { value: "24/7", isNumeric: false, label: t("MISSION-CRITICAL SUPPORT") },
     { value: "99.9", suffix: "%", isNumeric: true, label: t("ORDER ACCURACY RATE"), color: "text-swiss-red" },
-    { value: "Global", isNumeric: false, label: t("STRATEGIC REACH") }
+    { value: "Swiss-wide", isNumeric: false, label: t("STRATEGIC REACH") }
   ];
 
-  const partners = ["HYDRUX", "DIRTS", "VELOCITI", "ORBITA", "KRONOS"];
 
   return (
     <section className="py-24 border-b border-swiss-dark/5 dark:border-white/5 bg-white dark:bg-[#0A0A0A] transition-colors duration-300">
@@ -37,14 +36,6 @@ const MetricsSection = () => {
                 {metric.label}
               </p>
             </motion.div>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap justify-center md:justify-between items-center gap-12 opacity-30 dark:opacity-20 grayscale hover:opacity-100 dark:hover:opacity-100 hover:grayscale-0 transition-all duration-500">
-          {partners.map((partner) => (
-            <span key={partner} className="text-2xl font-black tracking-tighter cursor-default dark:text-white">
-              {partner}
-            </span>
           ))}
         </div>
       </div>

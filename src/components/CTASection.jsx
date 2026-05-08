@@ -13,7 +13,7 @@ const CTASection = ({
   const isDark = variant === "dark";
   
   const displayTitle = title || t("Ready to Scale Your Logistics?");
-  const displaySubtitle = subtitle || t("Connect with our solutions architects for a tailored technical brief and global scaling strategy.");
+  const displaySubtitle = subtitle || t("Connect with our solutions architects for a tailored technical brief and Swiss scaling strategy.");
 
   return (
     <section id="cta-section" className={`py-24 md:py-32 text-center transition-colors duration-300 ${isDark ? 'bg-swiss-dark text-white' : 'bg-white dark:bg-[#0A0A0A] text-swiss-dark dark:text-white border-t border-swiss-dark/5 dark:border-white/5'}`}>
@@ -40,7 +40,7 @@ const CTASection = ({
               </a>
             </Magnetic>
             <a 
-              href="mailto:Sr@parcellino-swiss.ch"
+              href="mailto:sr@parcellino-swiss.ch"
               className={`font-bold uppercase tracking-widest text-[10px] border-b-2 border-swiss-red pb-1 transition-colors inline-block ${isDark ? 'text-white/80 hover:text-white' : 'text-swiss-dark/80 dark:text-white/80 hover:text-swiss-red dark:hover:text-swiss-red'}`}
             >
               {t('Speak to an Expert Now')}
