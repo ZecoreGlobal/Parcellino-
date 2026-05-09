@@ -213,7 +213,7 @@ const Navbar = () => {
                   <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-[0.2em] mb-6">{t('Contact Architecture')}</p>
                   <div className="space-y-4">
                     <a href="mailto:sr@parcellino-swiss.ch" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
-                      sr@<span className="text-swiss-red">parcellino</span>-swiss.ch
+                      sr@parcellino-swiss.ch
                     </a>
                     <a href="tel:+4368120806840" className="block text-xl font-bold text-swiss-dark dark:text-white hover:text-swiss-red transition-colors">
                       +43 681 20806840
