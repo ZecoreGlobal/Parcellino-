@@ -14,7 +14,7 @@ const BordersSection = () => {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-swiss-dark dark:text-white leading-tight mb-8 uppercase transition-colors">
-            {t('Swiss coverage is')}<br className="hidden md:block" />{t('absolute.')}
+            {t('Swiss coverage is')}<br className="hidden md:block" />{t('absolute')}
           </h2>
           <p className="text-base md:text-lg text-swiss-dark/60 dark:text-white/60 mb-10 leading-relaxed max-w-md mx-auto lg:mx-0 transition-colors">
             {t("Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.")}

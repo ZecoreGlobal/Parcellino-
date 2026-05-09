@@ -25,13 +25,13 @@ const translations = {
 
     // BordersSection
     "Swiss coverage is": "Schweizer Abdeckung ist",
-    "absolute.": "absolut.",
+    "absolute": "absolut",
     "Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.": "Unsere Infrastruktur ist exklusiv für die Schweizer Landschaft optimiert. Von Genf bis Zürich, von Lugano bis Basel bieten wir ein makelloses Fulfillment, das perfekt auf die einzigartigen mehrsprachigen Kantone der Schweiz zugeschnitten ist.",
     "SWISS MULTI-LANGUAGE ARCHITECTURE": "SCHWEIZER MEHRSPRACHIGE ARCHITEKTUR",
 
     // BentoGrid
     "ENGINEERED EXCELLENCE": "KONSTRUIERTE EXZELLENZ",
-    "BENTO BOX OF PRECISION.": "BENTO-BOX DER PRÄZISION.",
+    "BENTO BOX OF PRECISION": "BENTO-BOX DER PRÄZISION",
     "E-Com Integration": "E-Com Integration",
     "One-click Shopify/Woo/Amazon sync. Our API is built for high-frequency trading standards, ensuring your stock levels are never out of sync.": "Ein-Klick Shopify/Woo/Amazon-Synchronisation. Unsere API wurde für Hochfrequenzhandelsstandards entwickelt, um sicherzustellen, dass Ihre Lagerbestände nie asynchron sind.",
     "Explore Tech": "Technik entdecken",

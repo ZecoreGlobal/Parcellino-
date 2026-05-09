@@ -17,7 +17,7 @@ const BentoGrid = () => {
             {t('ENGINEERED EXCELLENCE')}
           </span>
           <h2 className="text-4xl font-bold text-swiss-dark transition-colors">
-            {t('BENTO BOX OF PRECISION.')}
+            {t('BENTO BOX OF PRECISION')}
           </h2>
         </div>
 
