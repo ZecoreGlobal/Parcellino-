@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Globe, Menu, X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import Magnetic from './Magnetic';
-import ThemeToggle from './ThemeToggle';
 import { useLanguage } from '../context/LanguageContext';
 
 const Navbar = () => {
@@ -21,10 +20,10 @@ const Navbar = () => {
 
   // Swiss Flag Icon Component
   const SwissFlag = () => (
-    <div className="w-5 h-5 bg-swiss-red flex items-center justify-center rounded-sm flex-shrink-0">
-      <div className="relative w-3 h-3 flex items-center justify-center">
-        <div className="absolute w-full h-[2px] bg-white" />
-        <div className="absolute w-[2px] h-full bg-white" />
+    <div className="w-[26px] h-[26px] bg-swiss-red flex items-center justify-center rounded-sm flex-shrink-0">
+      <div className="relative w-[15px] h-[15px] flex items-center justify-center">
+        <div className="absolute w-full h-[2.5px] bg-white" />
+        <div className="absolute w-[2.5px] h-full bg-white" />
       </div>
     </div>
   );
@@ -38,11 +37,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isMobileMenuOpen ? 'bg-white dark:bg-[#0A0A0A]' : 'bg-white/80 dark:bg-[#0A0A0A]/80 backdrop-blur-md'} border-b border-swiss-dark/5 dark:border-white/5`}>
+    <nav className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${isMobileMenuOpen ? 'bg-swiss-light-grey' : 'bg-swiss-light-grey/80 backdrop-blur-md'} border-b border-swiss-dark/5`}>
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group">
+        <Link to="/" className="flex items-center gap-3.5 group">
           <SwissFlag />
-          <span className="font-bold text-xl tracking-tight text-swiss-red transition-colors lowercase">parcellino</span>
+          <span className="font-bold text-2xl sm:text-[26px] tracking-tight text-swiss-red transition-colors lowercase">parcellino</span>
         </Link>
         
         {/* Desktop Links */}
@@ -51,7 +50,7 @@ const Navbar = () => {
             <Link 
               key={link.name} 
               to={link.path} 
-              className={`text-sm font-medium transition-colors ${
+              className={`text-[17px] font-medium transition-colors ${
                 location.pathname === link.path ? 'text-swiss-red' : 'text-swiss-dark/70 dark:text-white/70 hover:text-swiss-red dark:hover:text-swiss-red'
               }`}
             >
@@ -63,7 +62,7 @@ const Navbar = () => {
           <div className="relative">
             <button 
               onClick={() => setIsLangOpen(!isLangOpen)}
-              className="flex items-center gap-1.5 text-sm font-medium text-swiss-dark/70 dark:text-white/70 hover:text-swiss-red dark:hover:text-swiss-red transition-colors"
+              className="flex items-center gap-1.5 text-[17px] font-medium text-swiss-dark/70 dark:text-white/70 hover:text-swiss-red dark:hover:text-swiss-red transition-colors"
             >
               <Globe size={14} />
               {currentLang}
@@ -105,7 +104,6 @@ const Navbar = () => {
 
         {/* Desktop CTA & Mobile Toggle */}
         <div className="flex items-center gap-4">
-          <ThemeToggle />
           
           <div className="hidden sm:block">
             <Magnetic>
@@ -139,9 +137,9 @@ const Navbar = () => {
           >
             {/* Header Area */}
             <div className="h-20 flex items-center justify-between px-6 border-b border-swiss-dark/5 dark:border-white/5">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3.5">
                 <SwissFlag />
-                <span className="font-bold text-lg lowercase tracking-tighter text-swiss-red">parcellino</span>
+                <span className="font-bold text-xl sm:text-[24px] lowercase tracking-tighter text-swiss-red">parcellino</span>
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}

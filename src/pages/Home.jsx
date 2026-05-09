@@ -14,7 +14,7 @@ const Home = () => {
       <BentoGrid />
       <MetricsSection />
       <Testimonial />
-      <CTASection variant="dark" />
+      <CTASection />
     </>
   );
 };

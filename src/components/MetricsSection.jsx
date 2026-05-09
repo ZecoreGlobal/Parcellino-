@@ -13,7 +13,7 @@ const MetricsSection = () => {
 
 
   return (
-    <section className="py-24 border-b border-swiss-dark/5 dark:border-white/5 bg-white dark:bg-[#0A0A0A] transition-colors duration-300">
+    <section className="py-24 border-b border-swiss-dark/5 bg-swiss-light-grey transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 mb-24">
           {metrics.map((metric, i) => (

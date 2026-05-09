@@ -11,9 +11,9 @@ const translations = {
     
     // Hero
     "THE SWISS LOGISTICS EDGE": "DER SCHWEIZER LOGISTIK-VORSPRUNG",
-    "PARCELLINO:": "PARCELLINO:",
+    "PARCELLINO": "PARCELLINO",
     "PRECISION": "PRÄZISION",
-    "FULFILLMENT.": "FULFILLMENT.",
+    "FULFILLMENT": "FULFILLMENT",
     "From the heart of Switzerland to every corner of the nation. 1-second logistics, multi-language integration, and the Swiss standard of reliability.": "Vom Herzen der Schweiz in jeden Winkel des Landes. 1-Sekunden-Logistik, mehrsprachige Integration und der Schweizer Standard für Zuverlässigkeit.",
     "See our solutions": "Unsere Lösungen ansehen",
     "View Network": "Netzwerk anzeigen",

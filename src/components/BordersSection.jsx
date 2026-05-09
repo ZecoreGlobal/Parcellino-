@@ -10,7 +10,7 @@ const BordersSection = () => {
   ];
 
   return (
-    <section id="borders-section" className="py-24 bg-white dark:bg-[#0A0A0A] transition-colors duration-300">
+    <section id="borders-section" className="py-24 bg-swiss-light-grey transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <div className="text-center lg:text-left">
           <h2 className="text-4xl md:text-5xl font-bold text-swiss-dark dark:text-white leading-tight mb-8 uppercase transition-colors">
