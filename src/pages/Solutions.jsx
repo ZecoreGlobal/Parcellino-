@@ -32,7 +32,7 @@ const Solutions = () => {
     {
       id: "03",
       title: t("Rapid Fulfillment"),
-      desc: t("Order-to-shipping in 60 minutes. Meticulous picking flows that mimic Swiss watch movements."),
+      desc: t("Order-to-shipping in 60 minutes. Meticulous picking flows engineered for maximum efficiency."),
       details: {
         insight: t("Our swift picking processes move with synchronized precision, minimizing transit delays and expediting shipping times."),
         features: [t("60-Minute Picking Window"), t("Express Dispatch Services"), t("High-Priority Scheduling"), t("Zero Pick-Error Tolerance")]
@@ -139,7 +139,7 @@ const Solutions = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setSelectedSolution(null)}
-              className="absolute inset-0 bg-swiss-dark/90 backdrop-blur-sm"
+              className="absolute inset-0 bg-swiss-dark/90"
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -189,7 +189,7 @@ const Solutions = () => {
                     rel="noopener noreferrer"
                     className="bg-swiss-red text-white px-8 py-3 text-xs font-bold uppercase tracking-widest rounded-sm hover:bg-swiss-dark transition-colors inline-block"
                   >
-                    {t('Contact on WhatsApp')}
+                    {t('Start Fulfillment')}
                   </a>
                 </Magnetic>
               </div>
@@ -245,7 +245,7 @@ const Solutions = () => {
                 onClick={() => document.getElementById('cta-section')?.scrollIntoView({ behavior: 'smooth' })}
                 className="text-swiss-red font-bold uppercase tracking-widest text-[10px] flex items-center gap-3 hover:gap-5 transition-all"
               >
-                {t('Request Strategy')} <ArrowRight size={14} />
+                {t('Start Fulfillment')} <ArrowRight size={14} />
               </button>
             </div>
           </div>

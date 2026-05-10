@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <span className="text-sm font-bold tracking-tighter lowercase text-swiss-red transition-colors">parcellino</span>
             <span className="text-[9px] text-swiss-dark/40 font-medium mt-1 tracking-wider italic">
-              {t('We deliver more than products. We provide trust, efficiency and growth.')}
+              {t('Leading provider of fulfillment Switzerland services and precision architecture.')}
             </span>
           </div>
           <nav className="hidden md:flex items-center gap-6">

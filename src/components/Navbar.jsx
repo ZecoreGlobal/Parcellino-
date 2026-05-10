@@ -111,7 +111,7 @@ const Navbar = () => {
                 onClick={scrollToCTA}
                 className="bg-swiss-red text-white px-5 py-2.5 text-sm font-semibold rounded-sm hover:bg-swiss-red/90 transition-all active:scale-[0.98]"
               >
-                {t('Start Your E-com Now')}
+                {t('Start Fulfillment')}
               </button>
             </Magnetic>
           </div>
@@ -225,7 +225,7 @@ const Navbar = () => {
                   onClick={scrollToCTA}
                   className="w-full bg-swiss-red text-white py-5 font-bold uppercase tracking-[0.3em] text-xs hover:bg-swiss-dark transition-all shadow-xl shadow-swiss-red/20"
                 >
-                  {t('Start Your E-com Now')}
+                  {t('Start Fulfillment')}
                 </button>
               </div>
             </div>

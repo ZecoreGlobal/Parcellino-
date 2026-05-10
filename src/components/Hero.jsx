@@ -38,7 +38,7 @@ const Hero = () => {
             {t('FULFILLMENT')}
           </h1>
           <p className="text-base sm:text-lg text-swiss-dark/60 dark:text-white/60 max-w-lg mb-10 leading-relaxed mx-auto lg:mx-0 transition-colors">
-            {t('From the heart of Switzerland to every corner of the nation. 1-second logistics, multi-language integration, and the Swiss standard of reliability.')}
+            {t('Pioneering Swiss fulfillment and E-commerce logistics Switzerland solutions. From the heart of the nation, we provide real-time logistics and the Swiss standard of reliability.')}
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Layers, Recycle, Zap, RefreshCcw, ArrowRight, Warehouse } from 'lucide-react';
-import swissWatch from '../assets/swiss_watch.png';
+import swissWarehouse from '../assets/swiss_warehouse.png';
 import { useLanguage } from '../context/LanguageContext';
 
 const BentoGrid = () => {
@@ -17,7 +17,7 @@ const BentoGrid = () => {
             {t('ENGINEERED EXCELLENCE')}
           </span>
           <h2 className="text-4xl font-bold text-swiss-dark transition-colors">
-            {t('BENTO BOX OF PRECISION')}
+            {t('ECOSYSTEM OF PRECISION')}
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ const BentoGrid = () => {
               <Layers className="text-swiss-red mb-6" size={28} />
               <h3 className="text-xl font-bold mb-3 text-swiss-dark">{t('E-Com Management')}</h3>
               <p className="text-sm text-swiss-dark/60 leading-relaxed mb-6">
-                {t('We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision. Perfect for emerging brands looking for error-free execution and personal care without complex setups.')}
+                {t('Premier Shopify fulfillment Switzerland services. We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision, offering error-free care without complexities.')}
               </p>
             </div>
             <button className="flex items-center gap-2 text-[10px] font-bold text-swiss-red uppercase tracking-widest group-hover:gap-4 transition-all self-start mt-auto">
@@ -68,7 +68,7 @@ const BentoGrid = () => {
               <Zap className="text-swiss-red mb-6" size={28} />
               <h3 className="text-xl font-bold mb-3 text-swiss-dark">{t('Rapid Fulfillment')}</h3>
               <p className="text-sm text-swiss-dark/60 leading-relaxed mb-6">
-                {t('Order-to-shipping in 60 minutes. Meticulous picking flows that mimic Swiss watch movements.')}
+                {t('Order-to-shipping in 60 minutes. Meticulous picking flows engineered for maximum efficiency.')}
               </p>
             </div>
             <button className="flex items-center gap-2 text-[10px] font-bold text-swiss-red uppercase tracking-widest group-hover:gap-4 transition-all self-start mt-auto">
@@ -118,14 +118,14 @@ const BentoGrid = () => {
             className="relative overflow-hidden group border border-swiss-dark/5 h-[350px] sm:h-[320px] rounded-sm"
           >
             <img 
-              src={swissWatch} 
-              alt="Swiss Watch Precision" 
-              className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" 
+              src={swissWarehouse} 
+              alt="Swiss Precision Warehouse" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" 
             />
             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700" />
             <div className="absolute bottom-4 right-4 z-10">
               <span className="text-swiss-red bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm text-[10px] tracking-wider font-bold shadow-lg">
-                {t('Quality in perfect time.')}
+                {t('Engineered efficiency.')}
               </span>
             </div>
           </motion.div>
