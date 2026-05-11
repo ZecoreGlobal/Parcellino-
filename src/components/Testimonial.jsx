@@ -14,7 +14,7 @@ const Testimonial = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative group max-w-md mx-auto lg:max-w-none"
+          className="relative group max-w-sm mx-auto"
         >
           <div className="absolute -top-4 -left-4 w-full h-full border border-swiss-red/20 z-0 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform" />
           <div className="relative z-10 aspect-[4/5] overflow-hidden">

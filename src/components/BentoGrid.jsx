@@ -94,7 +94,25 @@ const BentoGrid = () => {
             </button>
           </motion.div>
 
-          {/* Card 5: Warehousing Storage */}
+          {/* Card 5: Swiss Watch Image Card (Moved to center) */}
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="relative overflow-hidden group border border-swiss-dark/5 h-[350px] sm:h-[320px] rounded-sm"
+          >
+            <img 
+              src={swissWarehouse} 
+              alt={t('Swiss Precision Warehouse')} 
+              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" 
+            />
+            <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700" />
+            <div className="absolute bottom-4 right-4 z-10">
+              <span className="text-swiss-red bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm text-[10px] tracking-wider font-bold shadow-lg">
+                {t('Engineered efficiency.')}
+              </span>
+            </div>
+          </motion.div>
+
+          {/* Card 6: Warehousing Storage (Moved to end) */}
           <motion.div
             whileHover={{ y: -5 }}
             onClick={() => navigate('/solutions')}
@@ -110,24 +128,6 @@ const BentoGrid = () => {
             <button className="flex items-center gap-2 text-[10px] font-bold text-swiss-red uppercase tracking-widest group-hover:gap-4 transition-all self-start mt-auto">
               {t('View Storage')} <ArrowRight size={14} />
             </button>
-          </motion.div>
-
-          {/* Card 6: Swiss Watch Image Card (Where mountain was) */}
-          <motion.div
-            whileHover={{ y: -5 }}
-            className="relative overflow-hidden group border border-swiss-dark/5 h-[350px] sm:h-[320px] rounded-sm"
-          >
-            <img 
-              src={swissWarehouse} 
-              alt="Swiss Precision Warehouse" 
-              className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700" 
-            />
-            <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-700" />
-            <div className="absolute bottom-4 right-4 z-10">
-              <span className="text-swiss-red bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-sm text-[10px] tracking-wider font-bold shadow-lg">
-                {t('Engineered efficiency.')}
-              </span>
-            </div>
           </motion.div>
         </div>
       </div>

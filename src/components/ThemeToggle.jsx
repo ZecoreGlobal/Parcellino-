@@ -2,15 +2,17 @@ import React from 'react';
 import { Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
+  const { t } = useLanguage();
 
   return (
     <button
       onClick={toggleTheme}
       className="relative w-10 h-10 flex items-center justify-center rounded-full bg-swiss-dark/5 dark:bg-white/10 hover:bg-swiss-red/10 dark:hover:bg-swiss-red/20 transition-colors group"
-      aria-label="Toggle Theme"
+      aria-label={t("Toggle Theme")}
     >
       <AnimatePresence mode="wait">
         {theme === 'light' ? (

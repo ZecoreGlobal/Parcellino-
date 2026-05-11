@@ -41,7 +41,7 @@ const BordersSection = () => {
           transition={{ duration: 1 }}
           className="relative rounded-sm overflow-hidden bg-swiss-grey dark:bg-white/5 shadow-2xl shadow-swiss-dark/10 dark:shadow-none transition-colors"
         >
-          <img src={worldMap} alt="Swiss Logistics Network" className="w-full h-full object-cover grayscale opacity-80 dark:opacity-40 transition-opacity" />
+          <img src={worldMap} alt={t('Swiss Logistics Network')} className="w-full h-full object-cover grayscale opacity-80 dark:opacity-40 transition-opacity" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
             <motion.div
               animate={{ scale: [1, 1.5, 1], opacity: [0.5, 1, 0.5] }}

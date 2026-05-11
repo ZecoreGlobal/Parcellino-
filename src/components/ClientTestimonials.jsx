@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Quote } from 'lucide-react';
+import { useLanguage } from '../context/LanguageContext';
 
 const testimonials = [
   {
@@ -36,14 +37,16 @@ const highlightParcellino = (text) => {
 };
 
 const ClientTestimonials = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="py-24 bg-swiss-light-grey/50 dark:bg-[#0F0F0F] transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <span className="text-swiss-red font-bold tracking-[0.2em] text-[10px] uppercase mb-4 block">
-            Client Success
+            {t('Client Success')}
           </span>
-          <h2 className="text-4xl font-bold text-swiss-dark dark:text-white transition-colors">Trusted by Industry Leaders</h2>
+          <h2 className="text-4xl font-bold text-swiss-dark dark:text-white transition-colors">{t('Trusted by Industry Leaders')}</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -70,14 +73,14 @@ const ClientTestimonials = () => {
               <div className="relative mb-8">
                 <Quote size={24} className="text-swiss-red/10 dark:text-swiss-red/5 absolute -top-4 -left-6" />
                 <p className="text-swiss-dark/70 dark:text-white/70 text-sm leading-relaxed italic relative z-10 transition-colors">
-                  "{highlightParcellino(item.text)}"
+                  "{highlightParcellino(t(item.text))}"
                 </p>
               </div>
 
               <div className="mt-auto">
                 <h4 className="font-bold text-swiss-dark dark:text-white text-base transition-colors">{item.author}</h4>
                 <p className="text-[10px] font-bold text-swiss-dark/40 dark:text-white/40 uppercase tracking-widest mt-1">
-                  {item.role}
+                  {t(item.role)}
                 </p>
               </div>
             </motion.div>
