@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated for Parcellino Swiss | Precision Fulfillment -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Home Page -->
+  <url>
+    <loc>https://parcellino-swiss.ch/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://parcellino-swiss.ch/favicon.svg</image:loc>
+      <image:title>Parcellino Swiss | Precision Fulfillment &amp; E-commerce Logistics</image:title>
+      <image:caption>Swiss-engineered precision for nationwide logistics.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Solutions Page -->
+  <url>
+    <loc>https://parcellino-swiss.ch/solutions</loc>
+    <lastmod>2026-05-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://parcellino-swiss.ch/favicon.svg</image:loc>
+      <image:title>Parcellino Solutions | Swiss Logistics Architecture</image:title>
+      <image:caption>Tailored logistics for Swiss ambition.</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /index.html
+
+# Optimized for Swiss Precision Indexing
+# Specifically allowing AI Search Crawlers for discovery
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://parcellino-swiss.ch/sitemap.xml
