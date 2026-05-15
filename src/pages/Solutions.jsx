@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, Shield, MapPin, Zap, Leaf, ChevronDown, X, CheckCircle2 } from 'lucide-react';
-import heroBg from '../assets/hero_bg.png';
+import heroBg from '../assets/hero_bg.webp';
 import Magnetic from '../components/Magnetic';
 import CTASection from '../components/CTASection';
 import { useLanguage } from '../context/LanguageContext';

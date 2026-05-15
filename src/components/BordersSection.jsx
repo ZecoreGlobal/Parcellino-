@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import worldMap from '../assets/world_map.png';
+import worldMap from '../assets/world_map.webp';
 import { useLanguage } from '../context/LanguageContext';
 
 const BordersSection = () => {

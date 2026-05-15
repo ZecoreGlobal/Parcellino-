@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, ShieldCheck, Zap } from 'lucide-react';
-import heroBg from '../assets/hero_bg.png';
+import heroBg from '../assets/hero_bg.webp';
 import parcellinoVideo from '../assets/parcellino.webm';
 import Counter from './Counter';
 import Magnetic from './Magnetic';

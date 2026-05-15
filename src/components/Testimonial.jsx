@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MessageCircle } from 'lucide-react';
-import saminaImg from '../assets/samina.png';
+import saminaImg from '../assets/samina.webp';
 import { useLanguage } from '../context/LanguageContext';
 
 const Testimonial = () => {

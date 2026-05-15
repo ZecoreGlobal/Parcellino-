@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Layers, Recycle, Zap, RefreshCcw, ArrowRight, Warehouse } from 'lucide-react';
-import swissWarehouse from '../assets/swiss_warehouse.png';
+import swissWarehouse from '../assets/swiss_warehouse.webp';
 import { useLanguage } from '../context/LanguageContext';
 
 const BentoGrid = () => {
