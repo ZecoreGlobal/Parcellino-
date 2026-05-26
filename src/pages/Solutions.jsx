@@ -87,9 +87,9 @@ const Solutions = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl text-swiss-dark/70 max-w-2xl leading-relaxed transition-colors italic font-medium"
+            className="text-xl text-swiss-dark/70 max-w-2xl leading-relaxed transition-colors italic font-bold"
           >
-            "{t('We deliver more than products. We provide trust, efficiency and growth.')}"
+            {t('We deliver more than products. We provide trust, efficiency and growth.')}
           </motion.p>
         </div>
       </section>

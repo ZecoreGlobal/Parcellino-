@@ -8,7 +8,7 @@ const MetricsSection = () => {
   const metrics = [
     { value: "24/7", isNumeric: false, label: t("MISSION-CRITICAL SUPPORT") },
     { value: "99.9", suffix: "%", isNumeric: true, label: t("ORDER ACCURACY RATE"), color: "text-swiss-red" },
-    { value: "Nationwide", isNumeric: false, label: t("STRATEGIC REACH") }
+    { value: t("Nationwide"), isNumeric: false, label: t("STRATEGIC REACH") }
   ];
 
 

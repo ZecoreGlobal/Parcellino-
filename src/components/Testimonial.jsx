@@ -32,10 +32,10 @@ const Testimonial = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-4xl font-medium text-swiss-dark leading-[1.25] mb-8 italic transition-colors"
+            className="text-2xl md:text-4xl font-bold text-swiss-dark leading-[1.25] mb-8 italic transition-colors"
           >
-            "{t('We deliver more than products.')}<br />
-            {t('We provide trust, efficiency and growth.')}"
+            {t('We deliver more than products.')}<br />
+            {t('We provide trust, efficiency and growth.')}
           </motion.h2>
 
           {/* Supportive Statement Paragraphs */}
