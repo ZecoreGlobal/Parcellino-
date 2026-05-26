@@ -26,7 +26,7 @@ const translations = {
 
     // BordersSection
     "Swiss coverage is": "Die Schweizweite Abdeckung ist",
-    "absolute": "vollständig.",
+    "absolute": "vollständig",
     "Nationwide": "im ganzen Land",
     "Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.": "Unsere Infrastruktur ist exklusiv für die Schweizer Landschaft optimiert. Von Genf bis Zürich, von Lugano bis Basel bieten wir ein makelloses Fulfillment, das perfekt auf die einzigartigen mehrsprachigen Kantone der Schweiz zugeschnitten ist.",
     "SWISS MULTI-LANGUAGE ARCHITECTURE": "SCHWEIZER MEHRSPRACHIGE ARCHITEKTUR",
