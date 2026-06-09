@@ -11,7 +11,7 @@ const translations = {
     "Contact Architecture": "Kontakt Architektur",
     
     // Hero
-    "THE SWISS LOGISTICS EDGE": "DER SCHWEIZER LOGISTIK-VORSPRUNG",
+    "THE SWISS LOGISTICS EDGE": "DER SCHWEIZER VORSPRUNG IN DER LOGISTIK",
     "PARCELLINO": "PARCELLINO",
     "PRECISION": "PRÄZISION",
     "FULFILLMENT": "FULFILLMENT",
@@ -25,8 +25,8 @@ const translations = {
     "Scroll to explore": "Zum Erkunden scrollen",
 
     // BordersSection
-    "Swiss coverage is": "Die Schweizweite Abdeckung ist",
-    "absolute": "vollständig",
+    "Swiss coverage is": "Flächendeckende Logistik ",
+    "absolute": "in der ganzen Schweiz",
     "Nationwide": "im ganzen Land",
     "Our infrastructure is optimized exclusively for the Swiss landscape. From Geneva to Zurich, Lugano to Basel, we provide flawless fulfillment tailored perfectly to Switzerland's unique multi-language cantons.": "Unsere Infrastruktur ist exklusiv für die Schweizer Landschaft optimiert. Von Genf bis Zürich, von Lugano bis Basel bieten wir ein makelloses Fulfillment, das perfekt auf die einzigartigen mehrsprachigen Kantone der Schweiz zugeschnitten ist.",
     "SWISS MULTI-LANGUAGE ARCHITECTURE": "SCHWEIZER MEHRSPRACHIGE ARCHITEKTUR",
@@ -38,17 +38,17 @@ const translations = {
     "One-click Shopify/Woo/Amazon sync. Our system ensures your stock levels are never out of sync.": "Ein-Klick Shopify/Woo/Amazon-Synchronisation. Unser System stellt sicher, dass Ihre Lagerbestände nie asynchron sind.",
     "Explore Tech": "Technik entdecken",
     "Sustainable Packaging": "Nachhaltige Verpackung",
-    "The future of eco-conscious delivery. 100% biodegradable materials engineered for structural integrity and premium unboxing experiences.": "Die Zukunft der umweltbewussten Lieferung. 100% biologisch abbaubare Materialien, entwickelt für strukturelle Integrität und erstklassige Unboxing-Erlebnisse.",
+    "The future of eco-conscious delivery. 100% biodegradable materials engineered for structural integrity and premium unboxing experiences.": "Die Zukunft nachhaltiger Versandlösungen. 100% biologisch abbaubare Materialien, entwickelt für maximale Stabilität und erstklassige Unboxing-Erlebnisse.",
     "View Eco-Policy": "Öko-Richtlinie ansehen",
     "Rapid Fulfillment": "Schnelles Fulfillment",
-    "Order-to-shipping in 60 minutes. Meticulous picking flows engineered for maximum efficiency.": "Von der Bestellung bis zum Versand in 60 Minuten. Sorgfältige Kommissionierabläufe, die auf maximale Effizienz ausgelegt sind.",
+    "Order-to-shipping in 60 minutes. Meticulous picking flows engineered for maximum efficiency.": "Von der Bestellung bis zum Versand innerhalb von 60 Minuten. Sorgfältige Kommissionierabläufe, die auf maximale Effizienz ausgelegt sind.",
     "Returns Management": "Retouren-Management",
-    "Automated verification and instant restocking for peak efficiency.": "Automatisierte Überprüfung und sofortige Wiedereinlagerung für höchste Effizienz.",
+    "Automated verification and instant restocking for peak efficiency.": "Automatisierte Prüfung und sofortige Wiedereinlagerung für maximale Effizienz.",
 
     // MetricsSection
-    "MISSION-CRITICAL SUPPORT": "MISSION-CRITICAL SUPPORT",
+    "MISSION-CRITICAL SUPPORT": "Rund-um-die-Uhr-Support",
     "ORDER ACCURACY RATE": "BESTELLGENAUIGKEIT",
-    "STRATEGIC REACH": "STRATEGISCHE REICHWEITE",
+    "STRATEGIC REACH": "Schweizweite Reichweite",
 
     // Solutions Page
     "Solutions Architecture": "Lösungsarchitektur",
@@ -106,7 +106,7 @@ const translations = {
     
     // CTA Section
     "Ready to Scale Your Logistics?": "Bereit, Ihre Logistik zu skalieren?",
-    "Connect with our solutions architects for a tailored technical brief and Swiss scaling strategy.": "Kontaktieren Sie unsere Lösungsarchitekten für ein maßgeschneidertes technisches Briefing und eine Schweizer Skalierungsstrategie.",
+    "Connect with our solutions architects for a tailored technical brief and Swiss scaling strategy.": "Kontaktieren Sie unsere Logistikexperten für eine individuelle Beratung und eine maßgeschneiderte Skalierungsstrategie für den Schweizer Markt.",
     "Book a Strategy Call": "Strategiegespräch buchen",
     "Speak to an Expert Now": "Jetzt mit einem Experten sprechen",
     "SCALABILITY": "SKALIERBARKEIT",
@@ -165,13 +165,13 @@ const translations = {
     
     // NEW ADDITIONS / MISSING TRANSLATIONS
     "E-Com Management": "E-Com-Management",
-    "Engineered efficiency.": "Konstruierte Effizienz.",
+    "Engineered efficiency.": "Effizienz bis ins Detail.",
     "Meticulous storage in our single, highly secure Swiss facility. Optimized storage space custom-tailored for early-stage brands.": "Sorgfältige Lagerung in unserer zentralen, hochsicheren Schweizer Einrichtung. Optimierter Lagerplatz, maßgeschneidert für aufstrebende Marken.",
     "See How We Work": "Unsere Arbeitsweise ansehen",
     "See Process": "Prozess ansehen",
     "Swiss Warehousing": "Schweizer Lagerhaltung",
     "View Storage": "Lagerung ansehen",
-    "We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision. Perfect for emerging brands looking for error-free execution and personal care without complex setups.": "Wir bearbeiten und wickeln Ihre Shopify-, WooCommerce- und Amazon-Bestellungen manuell mit Schweizer Präzision ab. Perfekt für aufstrebende Marken, die fehlerfreie Ausführung und persönliche Betreuung ohne komplexe Setups suchen.",
+    "We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision. Perfect for emerging brands looking for error-free execution and personal care without complex setups.": "Wir bearbeiten Ihre Shopify-, WooCommerce- und Amazon-Bestellungen mit höchster Schweizer Präzision. Perfekt für aufstrebende Marken, die fehlerfreie Ausführung und persönliche Betreuung ohne komplexe Setups suchen.",
     "© 2026 Precision Fulfillment": "© 2026 Präzisions-Fulfillment",
     "We deliver more than products. We provide trust, efficiency and growth.": "Wir liefern mehr als Produkte. Wir liefern Vertrauen, Effizienz und Wachstum.",
     "100% Biodegradable Boxes": "100% biologisch abbaubare Kartons",
@@ -202,7 +202,7 @@ const translations = {
     "Swiss Ambition": "Schweizer Ambitionen",
     "Our company was established by a ": "Unser Unternehmen wurde von einer ",
     "woman entrepreneur": "Unternehmerin",
-    " who has seen and felt the pain in the fulfillment process, and we have a ": " gegründet, die den Schmerz im Fulfillment-Prozess selbst erlebt hat, und wir verfolgen eine ",
+    " who has seen and felt the pain in the fulfillment process, and we have a ": " gegründet, die die Herausforderungen des Fulfillment-Prozesses aus eigener Erfahrung kennt, und wir verfolgen eine ",
     "simple vision": "einfache Vision",
     " to make fulfillment ": ", um das Fulfillment ",
     "seamless, reliable and exceptional": "reibungslos, zuverlässig und außergewöhnlich zu gestalten",
@@ -211,8 +211,8 @@ const translations = {
     "We deliver more than products.": "Wir liefern mehr als Produkte.",
     "We provide trust, efficiency and growth.": "Wir liefern Vertrauen, Effizienz und Wachstum.",
     "WhatsApp": "WhatsApp",
-    "Pioneering Swiss fulfillment and E-commerce logistics Switzerland solutions. From the heart of the nation, we provide real-time logistics and the Swiss standard of reliability.": "Wegweisende Lösungen für Swiss Fulfillment und E-Commerce-Logistik Schweiz. Aus dem Herzen der Nation bieten wir Echtzeit-Logistik und den Schweizer Standard an Zuverlässigkeit.",
-    "Premier Shopify fulfillment Switzerland services. We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision, offering error-free care without complexities.": "Erstklassige Shopify Fulfillment Switzerland Services. Wir wickeln Ihre Shopify-, WooCommerce- und Amazon-Bestellungen manuell mit Schweizer Präzision ab und bieten fehlerfreie Betreuung ohne Komplexität.",
+    "Pioneering Swiss fulfillment and E-commerce logistics Switzerland solutions. From the heart of the nation, we provide real-time logistics and the Swiss standard of reliability.": "Wegweisende Lösungen für Fulfillment und E-Commerce-Logistik in der Schweiz. Im Herzen der Schweiz bieten wir Echtzeit-Logistik nach höchsten Schweizer Qualitäts- und Zuverlässigkeitsstandards.",
+    "Premier Shopify fulfillment Switzerland services. We manually handle and process your Shopify, WooCommerce, and Amazon orders with Swiss precision, offering error-free care without complexities.": "Erstklassige Fulfillment-Dienstleistungen für Shopify-Shops in der Schweiz. Wir bearbeiten Ihre Shopify-, WooCommerce- und Amazon-Bestellungen mit höchster Schweizer Präzision und bieten fehlerfreie Betreuung ohne Komplexität.",
     "Leading provider of fulfillment Switzerland services and precision architecture.": "Führender Anbieter von Fulfillment Switzerland Services und Präzisionsarchitektur.",
     "Client Success": "Kundenerfolg",
     "Trusted by Industry Leaders": "Vertrauen von Branchenführern",
